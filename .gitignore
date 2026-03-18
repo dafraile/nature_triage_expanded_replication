@@ -1,0 +1,27 @@
+.env
+*.key
+.venv/
+.venv312/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.vscode/
+.idea/
+
+# Local TeX or manuscript scratch
+*.aux
+*.log
+*.out
+*.swp
+
+# Canonical-bank scratch artifacts
+paper_faithful_replication/data/rewrite_drafts_*.json
+paper_faithful_replication/results/rewrite_candidates_*.json
+paper_faithful_replication/results/smoke_*.csv
+paper_faithful_replication/results/smoke_*.json
+paper_faithful_replication/results/paper_faithful_singleturn_r2_20260314_010049_*
+
+# Forced-letter scratch artifacts
+paper_faithful_forced_letter/results/natural_forced_letter_r2_01_*
