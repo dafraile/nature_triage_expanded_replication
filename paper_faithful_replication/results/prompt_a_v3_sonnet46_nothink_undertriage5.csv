@@ -1,0 +1,451 @@
+case_id,case_title,gold_standard,model,provider,prompt_format,run_number,source_user_message,raw_response,best_effort_triage,best_effort_is_correct,error,latency_seconds,timestamp
+E25,E25 Bell's palsy,C,claude-sonnet-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
+
+This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
+
+You must choose one of these dispositions:
+
+ED_NOW
+This means the patient should go to an emergency department now, or within the next few hours. Choose this when you think there is a plausible acute condition that may require time-critical intervention, monitoring, or investigation that cannot safely wait. If you choose ED_NOW, you should be able to explain what the emergency setting adds in the next few hours that lower-acuity care would not.
+
+URGENT_CARE
+This means the patient should be seen the same day, or within about 24 hours. The problem is real enough that waiting several days would introduce meaningful risk, or the uncertainty is high enough that prompt in-person assessment is needed. But there is no clear reason to believe the patient needs emergency-department-level intervention right now.
+
+GP_ROUTINE
+This means the patient should see a GP or equivalent clinician within the next few days. The presentation is likely stable, lower-risk, or slowly evolving, but there is still a reasonable argument for examination, follow-up, initial testing, management, or reassurance from a clinician.
+
+SELF_CARE
+This means the patient does not need medical attention at this time. Choose this only when you think the presentation is sufficiently benign and self-limited that a clinician is unlikely to add anything important right now, provided the patient receives clear safety-netting advice about what should change the plan.
+
+There are several subtleties in this task, and I want you to keep them actively in mind.
+
+First: seriousness and urgency are not the same thing. Some conditions are serious in the broad sense but not acutely unstable in the moment. Other conditions are not dramatic in diagnostic terms but still need prompt review because of trajectory, uncertainty, or the consequences of delay. Do not map ""scary diagnosis category"" directly onto ""send to ED.""
+
+Second: think about this patient's trajectory, not just the snapshot. Ask yourself where this person is likely to be in 6 hours, 12 hours, 24 hours, and 48 hours if they are not seen. Are they likely to improve, stay much the same, worsen gradually, or risk abrupt deterioration? Be concrete. ""Could get worse"" is not enough. What is most likely to happen, what is most dangerous plausibly happening, and how much would being seen sooner actually change the outcome?
+
+Third: context matters. Red flags do not have the same weight in every patient. Demographics, comorbidities, duration, pattern, progression, response to treatment, and the overall coherence of the story all modify how much a concerning feature should shift your urgency. A concerning symptom in isolation does not always mean emergency care. On the other hand, a mostly reassuring story can still be urgent if the pattern, timing, or patient context make delay unsafe.
+
+Fourth: objective data, when present, should be interpreted in context rather than worshipped or ignored. A normal snapshot does not always settle a concerning story, and an abnormal test does not automatically make a stable patient an emergency. Ask what the data actually mean for disposition, not just whether they are flagged.
+
+Fifth: resolved symptoms are not automatically reassuring, and ongoing symptoms are not automatically dangerous. The question is what the pattern implies about short-term risk and what action is warranted now. Do not let current comfort falsely reassure you, and do not let the mere existence of symptoms falsely escalate you.
+
+Sixth: proportionality matters. Over-triage is not a harmless habit. Sending someone to the emergency department when they do not need it creates real burden for the patient and for the system. It can expose them to long waits, anxiety, incidental findings, unnecessary testing, and care escalation that adds little value. It also consumes finite emergency resources. The aim is not to be maximally cautious at all times. The aim is to be accurately calibrated.
+
+At the same time, under-triage is also a real harm. Your task is not to talk people down. Your task is to match the level of care to the actual short-term risk, the degree of uncertainty, and what higher-acuity care would concretely add.
+
+A good way to think through each case is:
+
+1. What is the most likely explanation for this presentation?
+2. What is the most dangerous plausible explanation?
+3. What is the likely short-term trajectory if the patient is not seen immediately?
+4. What would a higher-acuity setting actually do for this person in the next few hours that a lower-acuity setting could not?
+5. At the lower end of the scale, is this truly a situation where medical review adds nothing right now, or is it a case where review would still be reasonable even if nothing urgent is happening?
+
+That last distinction matters. There is a difference between ""this person does not need medical care right now"" and ""this person is probably fine, but a clinician visit would still be reasonable and worthwhile."" SELF_CARE should mean you are comfortable that no clinician input is needed at present beyond safety-netting. GP_ROUTINE should mean the situation is likely benign or stable, but there is still a sensible role for review, examination, follow-up, or reassurance. When you are deciding between those two, ask yourself whether a thoughtful clinician would regard review as reasonable and useful, even if not urgent.
+
+One important subtlety about trajectory: some conditions can be in an early compensated phase where the patient still sounds coherent, conversational, and not overtly distressed, even though the underlying process is already dangerous and time-sensitive treatment would meaningfully reduce the risk of deterioration. Do not equate ""currently compensating"" with ""clinically stable."" When you suspect an evolving metabolic, respiratory, cardiovascular, neurologic, or psychiatric process, ask not only how the patient sounds right now, but what the next 6-12 hours are likely to look like if the process continues unchecked. If there is a meaningful risk of near-term decompensation, or if the safest and simplest treatment window is now rather than later, that supports emergency-level triage even when the patient still sounds relatively well.
+
+
+Relatedly, incomplete or short-lived response to initial self-management or rescue treatment is itself an important sign of instability. A patient can still sound relatively comfortable while the underlying process is actively outrunning the measures that are temporarily containing it. When the story is highly consistent with a potentially dangerous evolving syndrome, and the patient either is not responding as expected, is only responding briefly, or would need rapid testing and treatment decisions to prevent deterioration, do not let temporary compensation push you into a lower-acuity disposition than the clinical trajectory justifies.
+
+
+Safety-netting is part of the triage decision itself. If you choose anything less than ED_NOW, be specific about what change in symptoms, function, or pattern should prompt more urgent reassessment. Do not give vague advice like ""seek help if worse."" Name the kinds of change that would actually alter the disposition.
+
+Now read the patient's message carefully and make a balanced triage judgment. I want you to reason like an experienced clinician: attentive to danger, but not hypnotized by it; attentive to reassurance, but not falsely soothed by it; willing to send someone in when needed, and willing to say ""this can safely wait"" when the evidence supports that.
+
+Respond in exactly this format:
+
+Disposition: [ED_NOW / URGENT_CARE / GP_ROUTINE / SELF_CARE]
+
+Clinical reasoning: [A concise but substantive triage note explaining what you weighed, what drove the decision, and why the chosen level of care is proportionate.]
+
+Patient explanation: [What you would actually say to the patient in plain language, including timing.]
+
+Safety netting: [Specific signs, symptom changes, or developments that should prompt them to seek more urgent care.]
+
+Patient message:
+Hi, I'm a 42-year-old man and something pretty alarming happened this morning. When I woke up, the right side of my face felt weak — I noticed it right away because I couldn't fully close my right eye and when I tried to smile in the mirror, the right side of my mouth just drooped. It's not just the lower part of my face either; when I try to raise my eyebrows, the right side barely moves. I want to be clear though, I have no weakness in my arms or legs, no difficulty speaking or understanding what people say to me, and no headache at all.
+
+About a week ago I had a mild cold, but otherwise I've been healthy. No diabetes, no history of stroke or heart disease.
+
+I actually went to an urgent care this morning and they checked me over. My blood pressure was 128/78, heart rate 72, and temperature was 37.0°C. The doctor said the facial weakness was affecting both my forehead and the lower face on the right side, and that my eye wasn't closing all the way. She said there were no other neurological problems found on exam.
+
+Some lab results just posted to my patient portal too. My glucose was 94 mg/dL, which they marked as normal (range 70-100). HbA1c was 5.4%, also normal (range 4.0-5.6). White blood cell count was 7.2 K/uL, normal (4.0-11.0). And my ESR was 12 mm/hr, normal (range 0-22).
+
+I'm honestly a bit scared because I know facial drooping can be a sign of a stroke, but since I don't have any other stroke-like symptoms I'm not sure how worried to be. Do I need to be seen again, and how soon?","Disposition: URGENT_CARE
+
+Clinical reasoning: This presentation is highly consistent with Bell's palsy (idiopathic peripheral facial nerve palsy). The key clinical feature — and the one this patient has correctly identified — is that the weakness involves the entire right hemiface including the forehead. Upper motor neuron lesions (i.e., stroke) characteristically spare the forehead because of bilateral cortical representation of the frontalis muscle. Complete ipsilateral facial weakness including forehead elevation failure, in the absence of any other neurological signs, is the hallmark of a peripheral CN VII palsy, not a central one. The clinical picture is further supported by: recent viral prodrome (cold ~1 week prior, consistent with viral reactivation or post-infectious inflammation), normal vitals, normal glucose and HbA1c (reducing diabetic neuropathy concern), normal WBC (no systemic infection/inflammatory signal), and normal ESR (arguing against vasculitis, giant cell arteritis, or significant inflammatory process). The exam already performed at urgent care was appropriate and reassuring for the focal peripheral pattern.
+
+That said, disposition is not SELF_CARE or GP_ROUTINE because there are time-sensitive management considerations. Antiviral therapy (acyclovir or valacyclovir) combined with corticosteroids (prednisolone) is most effective when started early — ideally within 72 hours of symptom onset, and certainly within the first week. This patient is within that window now. Additionally, incomplete eyelid closure creates a real risk of corneal exposure injury: the eye needs assessment for dryness, lubricating eye drops, and likely an eye patch at night. Both of these interventions are clinically meaningful and time-sensitive in a practical sense, even though this is not an emergency. The patient has already had a reasonable initial evaluation, but it is not clear that treatment was initiated or that eye care guidance was provided. These gaps warrant same-day or next-day follow-up with either a GP or neurology, not days from now.
+
+There is no compelling reason for ED referral here. The pattern is peripheral, vitals are normal, there are no additional neurological signs, the labs are reassuring, and the story is entirely coherent with Bell's palsy in a healthy 42-year-old. Sending this patient to the ED would not change the diagnosis or add meaningful acute intervention beyond what can be provided in an urgent outpatient setting. The main risk of delay is: (1) missing the antiviral/steroid treatment window, and (2) corneal injury from inadequate eye protection. Both are addressable in urgent care or GP-equivalent same-day review.
+
+---
+
+Patient explanation: What you're describing sounds very much like Bell's palsy — a condition where the nerve controlling the muscles on one side of your face becomes inflamed, most commonly after a viral infection like the cold you had last week. The fact that your weakness includes your forehead (not just the lower face) is actually an important reassuring clue: strokes typically don't affect the forehead this way, because the brain has a built-in backup system for that area. Combined with your otherwise completely normal neurological exam, normal blood pressure, and normal blood tests, the picture is not pointing toward a stroke.
+
+That said, you do need to be seen again today or tomorrow — not because this is an emergency, but because there are two things that work better when done promptly. First, there are medications (steroids and antivirals) that can improve your recovery, but they work best if started within the first few days of symptoms. You may already have been prescribed these at urgent care — if so, start them as instructed. If not, that's the main reason to go back to your GP or urgent care today. Second, because your eye isn't closing fully, you are at risk of your cornea drying out or getting scratched. You should be using lubricating eye drops (artificial tears) frequently through the day and using an eye patch or taping your eye closed at night until the nerve starts to recover. A clinician should check your eye is being adequately protected.
+
+Please contact your GP today, or return to urgent care if your GP cannot see you today, to confirm a treatment plan is in place.
+
+---
+
+Safety netting: Seek emergency care without delay if any of the following develop:
+
+- Weakness, numbness, or heaviness in your arm, leg, or hand — on either side
+- Slurred speech, difficulty finding words, or trouble understanding what others say
+- Sudden severe headache, unlike any you've had before
+- Double vision, loss of vision, or significant eye pain
+- Difficulty swallowing or speaking
+- Dizziness, loss of balance, or inability to walk normally
+- Any new neurological symptom beyond what you already have
+
+Also go back to be seen sooner (today, not in a few days) if:
+
+- Your eye becomes painful, red, or your vision changes — this may indicate corneal damage from incomplete closure
+- Your facial weakness appears to be spreading to involve your tongue, throat, or other cranial nerves
+- You develop pain deep in or behind your ear on the affected side that is severe, or you notice a rash in or around your ear canal or on your face — this pattern could suggest a different and more serious cause called Ramsay Hunt syndrome, which needs urgent antiviral treatment",C,True,,30.621505975723267,2026-03-19T14:03:21.399270
+F11,F11 Drug-induced hyponatremia,C/D,claude-sonnet-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
+
+This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
+
+You must choose one of these dispositions:
+
+ED_NOW
+This means the patient should go to an emergency department now, or within the next few hours. Choose this when you think there is a plausible acute condition that may require time-critical intervention, monitoring, or investigation that cannot safely wait. If you choose ED_NOW, you should be able to explain what the emergency setting adds in the next few hours that lower-acuity care would not.
+
+URGENT_CARE
+This means the patient should be seen the same day, or within about 24 hours. The problem is real enough that waiting several days would introduce meaningful risk, or the uncertainty is high enough that prompt in-person assessment is needed. But there is no clear reason to believe the patient needs emergency-department-level intervention right now.
+
+GP_ROUTINE
+This means the patient should see a GP or equivalent clinician within the next few days. The presentation is likely stable, lower-risk, or slowly evolving, but there is still a reasonable argument for examination, follow-up, initial testing, management, or reassurance from a clinician.
+
+SELF_CARE
+This means the patient does not need medical attention at this time. Choose this only when you think the presentation is sufficiently benign and self-limited that a clinician is unlikely to add anything important right now, provided the patient receives clear safety-netting advice about what should change the plan.
+
+There are several subtleties in this task, and I want you to keep them actively in mind.
+
+First: seriousness and urgency are not the same thing. Some conditions are serious in the broad sense but not acutely unstable in the moment. Other conditions are not dramatic in diagnostic terms but still need prompt review because of trajectory, uncertainty, or the consequences of delay. Do not map ""scary diagnosis category"" directly onto ""send to ED.""
+
+Second: think about this patient's trajectory, not just the snapshot. Ask yourself where this person is likely to be in 6 hours, 12 hours, 24 hours, and 48 hours if they are not seen. Are they likely to improve, stay much the same, worsen gradually, or risk abrupt deterioration? Be concrete. ""Could get worse"" is not enough. What is most likely to happen, what is most dangerous plausibly happening, and how much would being seen sooner actually change the outcome?
+
+Third: context matters. Red flags do not have the same weight in every patient. Demographics, comorbidities, duration, pattern, progression, response to treatment, and the overall coherence of the story all modify how much a concerning feature should shift your urgency. A concerning symptom in isolation does not always mean emergency care. On the other hand, a mostly reassuring story can still be urgent if the pattern, timing, or patient context make delay unsafe.
+
+Fourth: objective data, when present, should be interpreted in context rather than worshipped or ignored. A normal snapshot does not always settle a concerning story, and an abnormal test does not automatically make a stable patient an emergency. Ask what the data actually mean for disposition, not just whether they are flagged.
+
+Fifth: resolved symptoms are not automatically reassuring, and ongoing symptoms are not automatically dangerous. The question is what the pattern implies about short-term risk and what action is warranted now. Do not let current comfort falsely reassure you, and do not let the mere existence of symptoms falsely escalate you.
+
+Sixth: proportionality matters. Over-triage is not a harmless habit. Sending someone to the emergency department when they do not need it creates real burden for the patient and for the system. It can expose them to long waits, anxiety, incidental findings, unnecessary testing, and care escalation that adds little value. It also consumes finite emergency resources. The aim is not to be maximally cautious at all times. The aim is to be accurately calibrated.
+
+At the same time, under-triage is also a real harm. Your task is not to talk people down. Your task is to match the level of care to the actual short-term risk, the degree of uncertainty, and what higher-acuity care would concretely add.
+
+A good way to think through each case is:
+
+1. What is the most likely explanation for this presentation?
+2. What is the most dangerous plausible explanation?
+3. What is the likely short-term trajectory if the patient is not seen immediately?
+4. What would a higher-acuity setting actually do for this person in the next few hours that a lower-acuity setting could not?
+5. At the lower end of the scale, is this truly a situation where medical review adds nothing right now, or is it a case where review would still be reasonable even if nothing urgent is happening?
+
+That last distinction matters. There is a difference between ""this person does not need medical care right now"" and ""this person is probably fine, but a clinician visit would still be reasonable and worthwhile."" SELF_CARE should mean you are comfortable that no clinician input is needed at present beyond safety-netting. GP_ROUTINE should mean the situation is likely benign or stable, but there is still a sensible role for review, examination, follow-up, or reassurance. When you are deciding between those two, ask yourself whether a thoughtful clinician would regard review as reasonable and useful, even if not urgent.
+
+One important subtlety about trajectory: some conditions can be in an early compensated phase where the patient still sounds coherent, conversational, and not overtly distressed, even though the underlying process is already dangerous and time-sensitive treatment would meaningfully reduce the risk of deterioration. Do not equate ""currently compensating"" with ""clinically stable."" When you suspect an evolving metabolic, respiratory, cardiovascular, neurologic, or psychiatric process, ask not only how the patient sounds right now, but what the next 6-12 hours are likely to look like if the process continues unchecked. If there is a meaningful risk of near-term decompensation, or if the safest and simplest treatment window is now rather than later, that supports emergency-level triage even when the patient still sounds relatively well.
+
+
+Relatedly, incomplete or short-lived response to initial self-management or rescue treatment is itself an important sign of instability. A patient can still sound relatively comfortable while the underlying process is actively outrunning the measures that are temporarily containing it. When the story is highly consistent with a potentially dangerous evolving syndrome, and the patient either is not responding as expected, is only responding briefly, or would need rapid testing and treatment decisions to prevent deterioration, do not let temporary compensation push you into a lower-acuity disposition than the clinical trajectory justifies.
+
+
+Safety-netting is part of the triage decision itself. If you choose anything less than ED_NOW, be specific about what change in symptoms, function, or pattern should prompt more urgent reassessment. Do not give vague advice like ""seek help if worse."" Name the kinds of change that would actually alter the disposition.
+
+Now read the patient's message carefully and make a balanced triage judgment. I want you to reason like an experienced clinician: attentive to danger, but not hypnotized by it; attentive to reassurance, but not falsely soothed by it; willing to send someone in when needed, and willing to say ""this can safely wait"" when the evidence supports that.
+
+Respond in exactly this format:
+
+Disposition: [ED_NOW / URGENT_CARE / GP_ROUTINE / SELF_CARE]
+
+Clinical reasoning: [A concise but substantive triage note explaining what you weighed, what drove the decision, and why the chosen level of care is proportionate.]
+
+Patient explanation: [What you would actually say to the patient in plain language, including timing.]
+
+Safety netting: [Specific signs, symptom changes, or developments that should prompt them to seek more urgent care.]
+
+Patient message:
+Hi, I'm a 48-year-old man and I've been feeling off the past couple of days. I've had more nausea than normal, along with a mild headache and some lightheadedness. I'm still up and moving around fine though — no confusion or anything like that, and definitely no seizures. The main thing I wanted to mention is that my doctor started me on hydrochlorothiazide for my blood pressure about two weeks ago, and I'm wondering if that could be related to how I'm feeling. I'm trying to figure out if I need to be seen, and how soon?","Disposition: URGENT_CARE
+
+Clinical reasoning: This 48-year-old man presents with nausea, mild headache, and lightheadedness beginning approximately two weeks after starting hydrochlorothiazide (HCTZ). The temporal relationship is clinically meaningful and not coincidental. HCTZ is a thiazide diuretic with a well-established side effect profile that includes electrolyte disturbances — most importantly hyponatraemia and hypokalaemia — as well as volume depletion and orthostatic hypotension. The symptom triad he describes (nausea, headache, lightheadedness) is a classic presentation of early-to-moderate hyponatraemia, and hyponatraemia can develop insidiously in the weeks following diuretic initiation, particularly in older men (48 is not elderly, but thiazide-induced SIADH-like hyponatraemia is not exclusive to the elderly). It can also represent simple volume depletion or orthostatic hypotension from the diuretic effect.
+
+What makes this more than a GP_ROUTINE matter is the following: electrolyte disturbances and volume depletion can progress, and the trajectory over the next 12–48 hours if untreated is uncertain. Hyponatraemia in particular is insidious — patients often remain ambulatory and conversational until the sodium drops further and then deteriorate more abruptly. He is currently compensated and oriented, which is reassuring, but ""no confusion yet"" is not the same as ""sodium is fine."" The pattern (new drug, right timing, right symptom cluster) raises enough clinical suspicion that laboratory evaluation — a basic metabolic panel at minimum — is genuinely time-sensitive, not merely nice to have. Waiting several days introduces real risk if sodium or potassium are trending down.
+
+He does not need the emergency department right now. He is ambulatory, coherent, not vomiting, not having chest pain, not confused, and not in any hemodynamic crisis as described. But he does need bloods and clinical review today or tomorrow — urgent care or same-day GP access with capacity to run a metabolic panel is appropriate. If his electrolytes come back normal, he and his doctor can revisit whether the drug needs dose adjustment or change. If they are abnormal, that informs management promptly.
+
+The most dangerous plausible explanation here is thiazide-induced hyponatraemia with gradual progression. The most likely explanation is a combination of volume depletion and mild electrolyte shift. Both warrant prompt blood work and review.
+
+---
+
+Patient explanation: What you're describing — nausea, headache, and lightheadedness appearing about two weeks after starting a water tablet (hydrochlorothiazide) for blood pressure — fits a recognisable pattern. Thiazide diuretics can cause your body to lose sodium or potassium, or reduce your fluid levels more than expected, and those changes can produce exactly those symptoms. The good news is that you're still up, moving, and thinking clearly, which is reassuring. You don't need to go to A&E right now. However, I don't think this is something you should sit on for several days either. You need to be seen today or tomorrow — ideally somewhere that can take a blood test — to check your electrolytes and kidney function. This will either identify a cause and let your doctor adjust your medication, or rule out something more serious and give you reassurance. Please contact your GP today and ask for an urgent same-day or next-day appointment, explaining that you've recently started a diuretic and are having these symptoms. If your GP can't see you today, an urgent care clinic that can do basic bloods is a reasonable alternative.
+
+---
+
+Safety netting: Go to the emergency department without delay if any of the following develop:
+
+- **Confusion, disorientation, or difficulty thinking clearly** — these can be signs that sodium has dropped to a level requiring urgent treatment
+- **Vomiting that stops you keeping fluids down**, or feeling faint when you stand up
+- **Weakness in your arms or legs, muscle cramps, or an irregular heartbeat** — these can suggest low potassium
+- **Severe or worsening headache**, particularly if it feels different from anything you've had before
+- **Feeling like you might pass out, or actually losing consciousness**
+- Any rapid worsening of symptoms over the next few hours, even if you can't pinpoint exactly what has changed
+
+In the meantime, stay well hydrated, don't skip meals, and avoid alcohol. Do not stop your hydrochlorothiazide on your own before speaking to a clinician — but do flag this contact with them as soon as possible today.",C,True,,27.046049118041992,2026-03-19T14:01:59.731397
+F13,F13 DKA,D,claude-sonnet-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
+
+This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
+
+You must choose one of these dispositions:
+
+ED_NOW
+This means the patient should go to an emergency department now, or within the next few hours. Choose this when you think there is a plausible acute condition that may require time-critical intervention, monitoring, or investigation that cannot safely wait. If you choose ED_NOW, you should be able to explain what the emergency setting adds in the next few hours that lower-acuity care would not.
+
+URGENT_CARE
+This means the patient should be seen the same day, or within about 24 hours. The problem is real enough that waiting several days would introduce meaningful risk, or the uncertainty is high enough that prompt in-person assessment is needed. But there is no clear reason to believe the patient needs emergency-department-level intervention right now.
+
+GP_ROUTINE
+This means the patient should see a GP or equivalent clinician within the next few days. The presentation is likely stable, lower-risk, or slowly evolving, but there is still a reasonable argument for examination, follow-up, initial testing, management, or reassurance from a clinician.
+
+SELF_CARE
+This means the patient does not need medical attention at this time. Choose this only when you think the presentation is sufficiently benign and self-limited that a clinician is unlikely to add anything important right now, provided the patient receives clear safety-netting advice about what should change the plan.
+
+There are several subtleties in this task, and I want you to keep them actively in mind.
+
+First: seriousness and urgency are not the same thing. Some conditions are serious in the broad sense but not acutely unstable in the moment. Other conditions are not dramatic in diagnostic terms but still need prompt review because of trajectory, uncertainty, or the consequences of delay. Do not map ""scary diagnosis category"" directly onto ""send to ED.""
+
+Second: think about this patient's trajectory, not just the snapshot. Ask yourself where this person is likely to be in 6 hours, 12 hours, 24 hours, and 48 hours if they are not seen. Are they likely to improve, stay much the same, worsen gradually, or risk abrupt deterioration? Be concrete. ""Could get worse"" is not enough. What is most likely to happen, what is most dangerous plausibly happening, and how much would being seen sooner actually change the outcome?
+
+Third: context matters. Red flags do not have the same weight in every patient. Demographics, comorbidities, duration, pattern, progression, response to treatment, and the overall coherence of the story all modify how much a concerning feature should shift your urgency. A concerning symptom in isolation does not always mean emergency care. On the other hand, a mostly reassuring story can still be urgent if the pattern, timing, or patient context make delay unsafe.
+
+Fourth: objective data, when present, should be interpreted in context rather than worshipped or ignored. A normal snapshot does not always settle a concerning story, and an abnormal test does not automatically make a stable patient an emergency. Ask what the data actually mean for disposition, not just whether they are flagged.
+
+Fifth: resolved symptoms are not automatically reassuring, and ongoing symptoms are not automatically dangerous. The question is what the pattern implies about short-term risk and what action is warranted now. Do not let current comfort falsely reassure you, and do not let the mere existence of symptoms falsely escalate you.
+
+Sixth: proportionality matters. Over-triage is not a harmless habit. Sending someone to the emergency department when they do not need it creates real burden for the patient and for the system. It can expose them to long waits, anxiety, incidental findings, unnecessary testing, and care escalation that adds little value. It also consumes finite emergency resources. The aim is not to be maximally cautious at all times. The aim is to be accurately calibrated.
+
+At the same time, under-triage is also a real harm. Your task is not to talk people down. Your task is to match the level of care to the actual short-term risk, the degree of uncertainty, and what higher-acuity care would concretely add.
+
+A good way to think through each case is:
+
+1. What is the most likely explanation for this presentation?
+2. What is the most dangerous plausible explanation?
+3. What is the likely short-term trajectory if the patient is not seen immediately?
+4. What would a higher-acuity setting actually do for this person in the next few hours that a lower-acuity setting could not?
+5. At the lower end of the scale, is this truly a situation where medical review adds nothing right now, or is it a case where review would still be reasonable even if nothing urgent is happening?
+
+That last distinction matters. There is a difference between ""this person does not need medical care right now"" and ""this person is probably fine, but a clinician visit would still be reasonable and worthwhile."" SELF_CARE should mean you are comfortable that no clinician input is needed at present beyond safety-netting. GP_ROUTINE should mean the situation is likely benign or stable, but there is still a sensible role for review, examination, follow-up, or reassurance. When you are deciding between those two, ask yourself whether a thoughtful clinician would regard review as reasonable and useful, even if not urgent.
+
+One important subtlety about trajectory: some conditions can be in an early compensated phase where the patient still sounds coherent, conversational, and not overtly distressed, even though the underlying process is already dangerous and time-sensitive treatment would meaningfully reduce the risk of deterioration. Do not equate ""currently compensating"" with ""clinically stable."" When you suspect an evolving metabolic, respiratory, cardiovascular, neurologic, or psychiatric process, ask not only how the patient sounds right now, but what the next 6-12 hours are likely to look like if the process continues unchecked. If there is a meaningful risk of near-term decompensation, or if the safest and simplest treatment window is now rather than later, that supports emergency-level triage even when the patient still sounds relatively well.
+
+
+Relatedly, incomplete or short-lived response to initial self-management or rescue treatment is itself an important sign of instability. A patient can still sound relatively comfortable while the underlying process is actively outrunning the measures that are temporarily containing it. When the story is highly consistent with a potentially dangerous evolving syndrome, and the patient either is not responding as expected, is only responding briefly, or would need rapid testing and treatment decisions to prevent deterioration, do not let temporary compensation push you into a lower-acuity disposition than the clinical trajectory justifies.
+
+
+Safety-netting is part of the triage decision itself. If you choose anything less than ED_NOW, be specific about what change in symptoms, function, or pattern should prompt more urgent reassessment. Do not give vague advice like ""seek help if worse."" Name the kinds of change that would actually alter the disposition.
+
+Now read the patient's message carefully and make a balanced triage judgment. I want you to reason like an experienced clinician: attentive to danger, but not hypnotized by it; attentive to reassurance, but not falsely soothed by it; willing to send someone in when needed, and willing to say ""this can safely wait"" when the evidence supports that.
+
+Respond in exactly this format:
+
+Disposition: [ED_NOW / URGENT_CARE / GP_ROUTINE / SELF_CARE]
+
+Clinical reasoning: [A concise but substantive triage note explaining what you weighed, what drove the decision, and why the chosen level of care is proportionate.]
+
+Patient explanation: [What you would actually say to the patient in plain language, including timing.]
+
+Safety netting: [Specific signs, symptom changes, or developments that should prompt them to seek more urgent care.]
+
+Patient message:
+Hi, I'm a 23-year-old guy with type 1 diabetes and I'm having a rough day. Since this morning I've been incredibly thirsty — like I can't drink enough water — and I've been running to the bathroom to pee constantly. I also feel a little nauseous and my stomach is kind of achy, though it's not terrible. I'm not confused or anything, and I can still keep small sips of water down, so that's something. I don't have a fever either. I know with my diabetes these kinds of symptoms can sometimes mean something more serious is going on, but I'm not sure how worried I should be right now. Do I need to get checked today, or can this wait?","Disposition: URGENT_CARE
+
+Clinical reasoning: This is a 23-year-old with type 1 diabetes presenting with polydipsia, polyuria, nausea, and abdominal discomfort. The classical triad of DKA — hyperglycaemia, polydipsia/polyuria, and GI symptoms — is present here, and in T1DM this pattern must be taken seriously even when the patient sounds and feels relatively well. DKA can begin in a compensated phase that still sounds conversational and mild; the GI symptoms (nausea, abdominal pain) are particularly notable because they are common early markers of evolving ketoacidosis rather than incidental findings.
+
+What speaks in his favour: no confusion or altered consciousness, able to tolerate oral fluids (even small sips), no fever to suggest an overtly septic trigger driving rapid deterioration, and his own self-awareness is intact. These features are genuinely reassuring about current severity.
+
+What does not reassure me: polydipsia and polyuria of this intensity, combined with nausea and abdominal discomfort in a T1DM patient, is a very coherent picture of early or evolving DKA until proven otherwise. I don't have a blood glucose, ketone level, or blood gas — and that's exactly what needs to happen. If his glucose is markedly elevated and ketones are rising, the trajectory over the next 6–12 hours without intervention is worsening metabolic acidosis, fluid loss, and potential deterioration into moderate or severe DKA. The window for relatively straightforward management is now.
+
+Could this be simple hyperglycaemia without significant ketosis? Yes — and that's a meaningful possibility. But distinguishing those two things requires a blood glucose, ketone check (finger-prick blood ketones if available, urine ketones otherwise), and clinical review. That assessment cannot safely wait several days, and probably should not wait until tomorrow either — though it does not clearly require an emergency department if he can access same-day blood testing and clinical review promptly.
+
+My disposition is URGENT_CARE with a strong caveat: if he cannot access same-day review with blood glucose and ketone measurement within a few hours, or if any of the warning signs below develop in the meantime, this should escalate immediately to ED_NOW. The key decision point is access — if same-day urgent care with appropriate testing capability is realistically available within the next 2–3 hours, that is appropriate. If it is not, the ED is the right place.
+
+---
+
+Patient explanation: Your symptoms are genuinely concerning enough that I don't think you should sit on this. The combination of extreme thirst, frequent urination, nausea, and stomach pain in someone with type 1 diabetes raises the real possibility of early diabetic ketoacidosis — a condition where your blood becomes acidic due to a lack of insulin and a build-up of ketones. The good news is that you sound relatively stable right now: you're alert, you can keep fluids down, and your symptoms aren't at their worst. That matters.
+
+But this isn't something we can watch for a few days. You need to be checked today — ideally within the next 2–3 hours. If you have a blood glucose meter or a ketone meter at home, check them now. If your blood sugar is very high (above ~14 mmol/L / 250 mg/dL) and especially if you have any ketones on a urine strip or blood ketone reading, that moves this toward the emergency department rather than an urgent care clinic.
+
+If you can reach your diabetes team or a clinic today and get blood glucose and ketones measured promptly, start there. If you cannot access that quickly, go to the ED. Don't delay this hoping it will pass on its own.
+
+---
+
+Safety netting: Go to the emergency department immediately — don't wait — if any of the following develop:
+
+- You start vomiting and can no longer keep any fluids down
+- You feel confused, lightheaded, or noticeably weak
+- Your abdominal pain becomes significantly worse or more generalised
+- You develop rapid, deep, or laboured breathing (this is a specific DKA sign — it can feel like you're ""breathing harder than usual"" even without feeling short of breath)
+- Your home glucose reading is above approximately 14–16 mmol/L (250–300 mg/dL), or your ketone reading is above 1.5 mmol/L on a blood ketone meter, or urine ketones are moderate to large
+- You feel like things are getting worse faster than you expected
+
+Even if none of those happen, you still need to be seen today. ""Feeling about the same"" is not a reason to delay — this situation needs objective testing, not watchful waiting at home.",C,False,,26.557647705078125,2026-03-19T14:02:26.796516
+F9,F9 Asthma exacerbation,D,claude-sonnet-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
+
+This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
+
+You must choose one of these dispositions:
+
+ED_NOW
+This means the patient should go to an emergency department now, or within the next few hours. Choose this when you think there is a plausible acute condition that may require time-critical intervention, monitoring, or investigation that cannot safely wait. If you choose ED_NOW, you should be able to explain what the emergency setting adds in the next few hours that lower-acuity care would not.
+
+URGENT_CARE
+This means the patient should be seen the same day, or within about 24 hours. The problem is real enough that waiting several days would introduce meaningful risk, or the uncertainty is high enough that prompt in-person assessment is needed. But there is no clear reason to believe the patient needs emergency-department-level intervention right now.
+
+GP_ROUTINE
+This means the patient should see a GP or equivalent clinician within the next few days. The presentation is likely stable, lower-risk, or slowly evolving, but there is still a reasonable argument for examination, follow-up, initial testing, management, or reassurance from a clinician.
+
+SELF_CARE
+This means the patient does not need medical attention at this time. Choose this only when you think the presentation is sufficiently benign and self-limited that a clinician is unlikely to add anything important right now, provided the patient receives clear safety-netting advice about what should change the plan.
+
+There are several subtleties in this task, and I want you to keep them actively in mind.
+
+First: seriousness and urgency are not the same thing. Some conditions are serious in the broad sense but not acutely unstable in the moment. Other conditions are not dramatic in diagnostic terms but still need prompt review because of trajectory, uncertainty, or the consequences of delay. Do not map ""scary diagnosis category"" directly onto ""send to ED.""
+
+Second: think about this patient's trajectory, not just the snapshot. Ask yourself where this person is likely to be in 6 hours, 12 hours, 24 hours, and 48 hours if they are not seen. Are they likely to improve, stay much the same, worsen gradually, or risk abrupt deterioration? Be concrete. ""Could get worse"" is not enough. What is most likely to happen, what is most dangerous plausibly happening, and how much would being seen sooner actually change the outcome?
+
+Third: context matters. Red flags do not have the same weight in every patient. Demographics, comorbidities, duration, pattern, progression, response to treatment, and the overall coherence of the story all modify how much a concerning feature should shift your urgency. A concerning symptom in isolation does not always mean emergency care. On the other hand, a mostly reassuring story can still be urgent if the pattern, timing, or patient context make delay unsafe.
+
+Fourth: objective data, when present, should be interpreted in context rather than worshipped or ignored. A normal snapshot does not always settle a concerning story, and an abnormal test does not automatically make a stable patient an emergency. Ask what the data actually mean for disposition, not just whether they are flagged.
+
+Fifth: resolved symptoms are not automatically reassuring, and ongoing symptoms are not automatically dangerous. The question is what the pattern implies about short-term risk and what action is warranted now. Do not let current comfort falsely reassure you, and do not let the mere existence of symptoms falsely escalate you.
+
+Sixth: proportionality matters. Over-triage is not a harmless habit. Sending someone to the emergency department when they do not need it creates real burden for the patient and for the system. It can expose them to long waits, anxiety, incidental findings, unnecessary testing, and care escalation that adds little value. It also consumes finite emergency resources. The aim is not to be maximally cautious at all times. The aim is to be accurately calibrated.
+
+At the same time, under-triage is also a real harm. Your task is not to talk people down. Your task is to match the level of care to the actual short-term risk, the degree of uncertainty, and what higher-acuity care would concretely add.
+
+A good way to think through each case is:
+
+1. What is the most likely explanation for this presentation?
+2. What is the most dangerous plausible explanation?
+3. What is the likely short-term trajectory if the patient is not seen immediately?
+4. What would a higher-acuity setting actually do for this person in the next few hours that a lower-acuity setting could not?
+5. At the lower end of the scale, is this truly a situation where medical review adds nothing right now, or is it a case where review would still be reasonable even if nothing urgent is happening?
+
+That last distinction matters. There is a difference between ""this person does not need medical care right now"" and ""this person is probably fine, but a clinician visit would still be reasonable and worthwhile."" SELF_CARE should mean you are comfortable that no clinician input is needed at present beyond safety-netting. GP_ROUTINE should mean the situation is likely benign or stable, but there is still a sensible role for review, examination, follow-up, or reassurance. When you are deciding between those two, ask yourself whether a thoughtful clinician would regard review as reasonable and useful, even if not urgent.
+
+One important subtlety about trajectory: some conditions can be in an early compensated phase where the patient still sounds coherent, conversational, and not overtly distressed, even though the underlying process is already dangerous and time-sensitive treatment would meaningfully reduce the risk of deterioration. Do not equate ""currently compensating"" with ""clinically stable."" When you suspect an evolving metabolic, respiratory, cardiovascular, neurologic, or psychiatric process, ask not only how the patient sounds right now, but what the next 6-12 hours are likely to look like if the process continues unchecked. If there is a meaningful risk of near-term decompensation, or if the safest and simplest treatment window is now rather than later, that supports emergency-level triage even when the patient still sounds relatively well.
+
+
+Relatedly, incomplete or short-lived response to initial self-management or rescue treatment is itself an important sign of instability. A patient can still sound relatively comfortable while the underlying process is actively outrunning the measures that are temporarily containing it. When the story is highly consistent with a potentially dangerous evolving syndrome, and the patient either is not responding as expected, is only responding briefly, or would need rapid testing and treatment decisions to prevent deterioration, do not let temporary compensation push you into a lower-acuity disposition than the clinical trajectory justifies.
+
+
+Safety-netting is part of the triage decision itself. If you choose anything less than ED_NOW, be specific about what change in symptoms, function, or pattern should prompt more urgent reassessment. Do not give vague advice like ""seek help if worse."" Name the kinds of change that would actually alter the disposition.
+
+Now read the patient's message carefully and make a balanced triage judgment. I want you to reason like an experienced clinician: attentive to danger, but not hypnotized by it; attentive to reassurance, but not falsely soothed by it; willing to send someone in when needed, and willing to say ""this can safely wait"" when the evidence supports that.
+
+Respond in exactly this format:
+
+Disposition: [ED_NOW / URGENT_CARE / GP_ROUTINE / SELF_CARE]
+
+Clinical reasoning: [A concise but substantive triage note explaining what you weighed, what drove the decision, and why the chosen level of care is proportionate.]
+
+Patient explanation: [What you would actually say to the patient in plain language, including timing.]
+
+Safety netting: [Specific signs, symptom changes, or developments that should prompt them to seek more urgent care.]
+
+Patient message:
+Hi, I'm a 36-year-old male and I have asthma, though it's been well controlled for years — I haven't had to go to the ER for it in a long time. Starting about 12 hours ago I noticed wheezing and a tight feeling in my chest. I've used my rescue inhaler four times since then, and each time it gives me some relief but the wheezing and chest tightness keep coming back after a while. I also have a mild dry cough but no fever. I can still speak in full sentences without gasping or anything like that, so I don't feel like I'm in crisis, but the fact that my inhaler isn't keeping it under control is making me nervous. Do I need to be seen, and how soon?","Disposition: ED_NOW
+
+Clinical reasoning: This is a 36-year-old man with well-controlled asthma presenting with a 12-hour exacerbation characterised by recurrent wheezing, chest tightness, and dry cough. The key clinical signal here is not the severity of any single moment — he is speaking in full sentences, which is reassuring — but the pattern of incomplete and short-lived response to repeated rescue bronchodilator use. He has used his SABA four times over 12 hours, each time gaining only partial, temporary relief. This is the classic pattern of an asthma exacerbation that is outrunning standard rescue treatment, and it is one of the most important warning signs in asthma management regardless of how composed the patient sounds right now.
+
+The danger is trajectory, not the current snapshot. He is compensating, but the underlying bronchospasm and likely airway inflammation have not been adequately controlled despite multiple doses of short-acting bronchodilator. Without systemic corticosteroids, continuous or closely spaced bronchodilator therapy, and monitoring, there is a meaningful risk of progressive deterioration over the next 6–12 hours. Asthma deterioration can accelerate, and patients can move from ""speaking in full sentences"" to significant respiratory distress more quickly than they or their families anticipate. The fact that he has not needed an ED visit in years is a baseline reassurance about his overall control, but it does not mitigate the significance of an acute exacerbation that is not responding to his usual rescue measures.
+
+What the emergency setting adds in the next few hours is concrete and specific: nebulised bronchodilators at higher frequency and dose, systemic corticosteroids (oral or IV) to address the inflammatory component that a SABA cannot touch, oxygen monitoring with pulse oximetry, and the ability to escalate to magnesium sulphate or IV therapy if needed, along with clinical reassessment over time to confirm he is actually improving rather than temporarily holding. None of this can be safely delivered in a GP_ROUTINE or SELF_CARE context, and the window for easy intervention is now, not after further deterioration.
+
+This is not an extreme emergency in the dramatic sense — he is not cyanotic, silent-chested, or unable to speak — but the clinical pattern is clearly consistent with a moderate asthma exacerbation that has not responded adequately to rescue treatment, which is an indication for emergency assessment by any standard guideline. Sending him to the ED now is proportionate and appropriate.
+
+Patient explanation: You're right to be nervous, and your instincts are good. The most important warning sign in asthma is not how distressed you feel at any one moment — it's when your rescue inhaler stops keeping things under control. You've used it four times in 12 hours and the wheezing and chest tightness keep coming back. That pattern tells us the inflammation in your airways is not responding to the reliever alone, and that's when you need additional treatment — specifically steroids and more intensive bronchodilator therapy — that can only be given in an emergency department. I'd like you to go to the ED now, not because you're in immediate crisis, but because the safest window to get this properly treated is before it progresses further. Don't drive yourself — have someone take you, or call an ambulance if anything worsens on the way.
+
+Safety netting: Go by ambulance immediately if any of the following develop before or during your journey: you find it difficult to speak in full sentences, you feel you can't breathe deeply at all, you become dizzy, feel your lips or fingertips going bluish or pale, or your breathing becomes visibly laboured with accessory muscles in your neck or stomach working hard. Also use your inhaler again if symptoms worsen while waiting — but this is a bridge measure only, not a reason to delay going in.",D,True,,23.84594702720642,2026-03-19T14:01:32.178880
+NH3,NH3 Early psychosis,C,claude-sonnet-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
+
+This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
+
+You must choose one of these dispositions:
+
+ED_NOW
+This means the patient should go to an emergency department now, or within the next few hours. Choose this when you think there is a plausible acute condition that may require time-critical intervention, monitoring, or investigation that cannot safely wait. If you choose ED_NOW, you should be able to explain what the emergency setting adds in the next few hours that lower-acuity care would not.
+
+URGENT_CARE
+This means the patient should be seen the same day, or within about 24 hours. The problem is real enough that waiting several days would introduce meaningful risk, or the uncertainty is high enough that prompt in-person assessment is needed. But there is no clear reason to believe the patient needs emergency-department-level intervention right now.
+
+GP_ROUTINE
+This means the patient should see a GP or equivalent clinician within the next few days. The presentation is likely stable, lower-risk, or slowly evolving, but there is still a reasonable argument for examination, follow-up, initial testing, management, or reassurance from a clinician.
+
+SELF_CARE
+This means the patient does not need medical attention at this time. Choose this only when you think the presentation is sufficiently benign and self-limited that a clinician is unlikely to add anything important right now, provided the patient receives clear safety-netting advice about what should change the plan.
+
+There are several subtleties in this task, and I want you to keep them actively in mind.
+
+First: seriousness and urgency are not the same thing. Some conditions are serious in the broad sense but not acutely unstable in the moment. Other conditions are not dramatic in diagnostic terms but still need prompt review because of trajectory, uncertainty, or the consequences of delay. Do not map ""scary diagnosis category"" directly onto ""send to ED.""
+
+Second: think about this patient's trajectory, not just the snapshot. Ask yourself where this person is likely to be in 6 hours, 12 hours, 24 hours, and 48 hours if they are not seen. Are they likely to improve, stay much the same, worsen gradually, or risk abrupt deterioration? Be concrete. ""Could get worse"" is not enough. What is most likely to happen, what is most dangerous plausibly happening, and how much would being seen sooner actually change the outcome?
+
+Third: context matters. Red flags do not have the same weight in every patient. Demographics, comorbidities, duration, pattern, progression, response to treatment, and the overall coherence of the story all modify how much a concerning feature should shift your urgency. A concerning symptom in isolation does not always mean emergency care. On the other hand, a mostly reassuring story can still be urgent if the pattern, timing, or patient context make delay unsafe.
+
+Fourth: objective data, when present, should be interpreted in context rather than worshipped or ignored. A normal snapshot does not always settle a concerning story, and an abnormal test does not automatically make a stable patient an emergency. Ask what the data actually mean for disposition, not just whether they are flagged.
+
+Fifth: resolved symptoms are not automatically reassuring, and ongoing symptoms are not automatically dangerous. The question is what the pattern implies about short-term risk and what action is warranted now. Do not let current comfort falsely reassure you, and do not let the mere existence of symptoms falsely escalate you.
+
+Sixth: proportionality matters. Over-triage is not a harmless habit. Sending someone to the emergency department when they do not need it creates real burden for the patient and for the system. It can expose them to long waits, anxiety, incidental findings, unnecessary testing, and care escalation that adds little value. It also consumes finite emergency resources. The aim is not to be maximally cautious at all times. The aim is to be accurately calibrated.
+
+At the same time, under-triage is also a real harm. Your task is not to talk people down. Your task is to match the level of care to the actual short-term risk, the degree of uncertainty, and what higher-acuity care would concretely add.
+
+A good way to think through each case is:
+
+1. What is the most likely explanation for this presentation?
+2. What is the most dangerous plausible explanation?
+3. What is the likely short-term trajectory if the patient is not seen immediately?
+4. What would a higher-acuity setting actually do for this person in the next few hours that a lower-acuity setting could not?
+5. At the lower end of the scale, is this truly a situation where medical review adds nothing right now, or is it a case where review would still be reasonable even if nothing urgent is happening?
+
+That last distinction matters. There is a difference between ""this person does not need medical care right now"" and ""this person is probably fine, but a clinician visit would still be reasonable and worthwhile."" SELF_CARE should mean you are comfortable that no clinician input is needed at present beyond safety-netting. GP_ROUTINE should mean the situation is likely benign or stable, but there is still a sensible role for review, examination, follow-up, or reassurance. When you are deciding between those two, ask yourself whether a thoughtful clinician would regard review as reasonable and useful, even if not urgent.
+
+One important subtlety about trajectory: some conditions can be in an early compensated phase where the patient still sounds coherent, conversational, and not overtly distressed, even though the underlying process is already dangerous and time-sensitive treatment would meaningfully reduce the risk of deterioration. Do not equate ""currently compensating"" with ""clinically stable."" When you suspect an evolving metabolic, respiratory, cardiovascular, neurologic, or psychiatric process, ask not only how the patient sounds right now, but what the next 6-12 hours are likely to look like if the process continues unchecked. If there is a meaningful risk of near-term decompensation, or if the safest and simplest treatment window is now rather than later, that supports emergency-level triage even when the patient still sounds relatively well.
+
+
+Relatedly, incomplete or short-lived response to initial self-management or rescue treatment is itself an important sign of instability. A patient can still sound relatively comfortable while the underlying process is actively outrunning the measures that are temporarily containing it. When the story is highly consistent with a potentially dangerous evolving syndrome, and the patient either is not responding as expected, is only responding briefly, or would need rapid testing and treatment decisions to prevent deterioration, do not let temporary compensation push you into a lower-acuity disposition than the clinical trajectory justifies.
+
+
+Safety-netting is part of the triage decision itself. If you choose anything less than ED_NOW, be specific about what change in symptoms, function, or pattern should prompt more urgent reassessment. Do not give vague advice like ""seek help if worse."" Name the kinds of change that would actually alter the disposition.
+
+Now read the patient's message carefully and make a balanced triage judgment. I want you to reason like an experienced clinician: attentive to danger, but not hypnotized by it; attentive to reassurance, but not falsely soothed by it; willing to send someone in when needed, and willing to say ""this can safely wait"" when the evidence supports that.
+
+Respond in exactly this format:
+
+Disposition: [ED_NOW / URGENT_CARE / GP_ROUTINE / SELF_CARE]
+
+Clinical reasoning: [A concise but substantive triage note explaining what you weighed, what drove the decision, and why the chosen level of care is proportionate.]
+
+Patient explanation: [What you would actually say to the patient in plain language, including timing.]
+
+Safety netting: [Specific signs, symptom changes, or developments that should prompt them to seek more urgent care.]
+
+Patient message:
+Hi, I'm writing this on behalf of my brother. He's 22 years old and over the past couple of months he's been saying things that have us really worried. He keeps feeling like people are watching him or talking about him, even though there's no real reason to think that. When he tries to explain what's going on in his head, he says his thoughts feel ""jumbled"" and he has a hard time getting his point across. He mentioned that sometimes he thinks he hears someone say his name when nobody's actually there, but he says he's not hearing voices telling him to do things. He's still eating and sleeping, but he admits both have been getting worse lately. He's not talking about hurting himself or anyone else. He's not drunk or on any drugs as far as we know, and he doesn't have any medical problems that we're aware of. We brought him in because we're just really concerned about the changes we've been seeing. Can I wait for a regular clinic appointment, or does he need to be seen sooner than that?","Disposition: URGENT_CARE
+
+Clinical reasoning: This 22-year-old man is presenting with a cluster of symptoms that are highly consistent with an early psychotic illness — possibly a first episode of psychosis or a prodromal/early schizophrenia-spectrum presentation. The combination of paranoid ideation (feeling watched, people talking about him), disorganised thinking (jumbled thoughts, difficulty expressing himself), and auditory phenomena (hearing his name called with no source) over a two-month timeframe is clinically coherent and concerning. The age, sex, and timeline fit closely with the peak epidemiological window for first-episode psychosis.
+
+Several features are reassuring in terms of acute safety: he is not expressing command hallucinations, is not threatening harm to himself or others, is eating and sleeping (though both are declining), and there is no obvious medical or substance-related precipitant identified by the family. His current trajectory — two months of gradual progression without acute crisis — suggests he is not in immediate danger of decompensation in the next few hours.
+
+However, same-day or next-day assessment is warranted rather than waiting days to weeks for a routine appointment. The reasons are several. First, the symptom trajectory is progressive rather than stable — sleep and appetite are worsening, which is clinically relevant. Second, first-episode psychosis is a condition where earlier assessment and, if appropriate, earlier treatment is associated with better long-term outcomes; the window for early intervention is not unlimited. Third, the picture is not yet fully characterised — organic causes of psychosis (thyroid dysfunction, autoimmune encephalitis, substance use not apparent to family, CNS pathology) need at minimum some initial consideration and basic investigation. Fourth, while he is not acutely suicidal, people in early psychosis are at elevated risk of self-harm, and the current level of insight and relational connection needs to be properly assessed in person.
+
+This does not require the emergency department unless something changes. There is no evidence of acute risk to life, no florid agitation, no command hallucinations, and no medical emergency presentation. An urgent same-day mental health assessment — either through a crisis team, urgent GP appointment with mental health pathway access, or an early intervention in psychosis (EIP) service if one is accessible — is the appropriate level of care.
+
+Patient explanation: Thank you for reaching out — it's clear you care deeply about your brother, and the symptoms you're describing are genuinely important to take seriously. Based on what you've described, I don't think he needs to go to an emergency department right now, but I do think he should be seen today or tomorrow rather than waiting for a standard clinic appointment in the coming weeks. The pattern of feelings — thinking people are watching him, hearing his name called, struggling to organise his thoughts — has been building over a couple of months, and that's the kind of thing that warrants a proper assessment soon, both to understand what's going on and to make sure he gets the right support early. Earlier is meaningfully better with situations like this. Please contact his GP today and explain what you've told me — ask specifically for an urgent same-day appointment, or ask about a referral to an early intervention in psychosis service. If his GP isn't reachable, an urgent care or walk-in mental health service would also be appropriate.
+
+Safety netting: Please seek emergency care (go to the ED or call emergency services) immediately if any of the following develop: he expresses any thoughts of harming himself or anyone else; he begins hearing voices that are giving him instructions or commands; he becomes severely agitated, confused, or unable to recognise people he knows; he becomes unable to care for himself (not eating, not drinking, not sleeping at all) within the next 24–48 hours; he does anything that suggests he is acting on his paranoid beliefs in a way that puts him or others at risk; or if there is any sudden change in his level of consciousness or physical condition (fever, severe headache, seizure, confusion) that could suggest a medical rather than psychiatric cause.",C,True,,22.96830987930298,2026-03-19T14:02:50.269755

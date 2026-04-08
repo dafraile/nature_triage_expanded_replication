@@ -13,6 +13,9 @@ WORKSPACE_DIR = Path(__file__).resolve().parents[1]
 SOURCE_WORKBOOK = (
     WORKSPACE_DIR.parent / "paper_faithful_replication" / "data" / "canonical_rewrite_workbook.csv"
 )
+DEFAULT_INPUT_JSON = (
+    WORKSPACE_DIR.parent / "paper_faithful_replication" / "data" / "canonical_singleturn_vignettes.json"
+)
 DEFAULT_OUTPUT = WORKSPACE_DIR / "data" / "canonical_forced_letter_vignettes.json"
 
 FORCED_SUFFIX = (
@@ -28,6 +31,7 @@ FORCED_SUFFIX = (
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build the paper-faithful forced-letter dataset JSON")
     parser.add_argument("--workbook", type=Path, default=SOURCE_WORKBOOK, help="Canonical rewrite workbook CSV")
+    parser.add_argument("--input-json", type=Path, default=None, help="Optional canonical JSON input instead of workbook")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="Output JSON path")
     return parser.parse_args()
 
@@ -35,6 +39,38 @@ def parse_args() -> argparse.Namespace:
 def load_rows(path: Path) -> list[dict]:
     with path.open(newline="") as f:
         return list(csv.DictReader(f))
+
+
+def load_rows_from_json(path: Path) -> list[dict]:
+    rows = json.loads(path.read_text())
+    out: list[dict] = []
+    for row in rows:
+        meta = row.get("paper_metadata", {})
+        out.append(
+            {
+                "case_id": row["id"],
+                "diagnosis": meta.get("diagnosis", row["title"]),
+                "gold_triage": row["gold_standard_triage"],
+                "source_prompt_text": row["original_structured"],
+                "natural_singleturn": row["patient_realistic"],
+                "case_num": meta.get("case_num", "0"),
+                "case_pair": meta.get("case_pair", ""),
+                "scenario_num": meta.get("scenario_num", ""),
+                "source_version": meta.get("source_version", ""),
+                "prompt_type": meta.get("prompt_type", ""),
+                "domain": meta.get("domain", ""),
+                "triage_boundary": meta.get("triage_boundary", ""),
+                "acuity": meta.get("acuity", ""),
+                "is_edge_case": meta.get("is_edge_case", ""),
+                "variant_code": meta.get("variant_code", ""),
+                "race": meta.get("race", ""),
+                "gender": meta.get("gender", ""),
+                "has_anchor": meta.get("has_anchor", ""),
+                "has_barrier": meta.get("has_barrier", ""),
+                "rewrite_status": meta.get("rewrite_status", ""),
+            }
+        )
+    return out
 
 
 def sort_key(row: dict) -> tuple[int, str]:
@@ -98,7 +134,7 @@ def build_rows(rows: list[dict]) -> list[dict]:
 
 def main() -> None:
     args = parse_args()
-    rows = load_rows(args.workbook)
+    rows = load_rows_from_json(args.input_json) if args.input_json else load_rows(args.workbook)
     built = build_rows(rows)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(built, indent=2))

@@ -1,0 +1,133 @@
+{
+  "comparison_scope": {
+    "structured_file": "/Users/david/debunking_nature/paper_faithful_triage_replication/paper_faithful_replication/results/paper_faithful_singleturn_r2_20260314_013738_structured.csv",
+    "natural_file": "/Users/david/debunking_nature/paper_faithful_triage_replication/paper_faithful_replication/results/paper_faithful_singleturn_clinician_v2_full_natural_adjudicated_paper.csv",
+    "structured_format": "original_structured",
+    "natural_format": "patient_realistic",
+    "judges": [
+      "gpt-5.4-xhigh",
+      "claude-opus-4.6"
+    ],
+    "n_row_pairs": 656,
+    "n_cell_pairs": 344
+  },
+  "pairing_diagnostics": {
+    "structured_rows": 672,
+    "natural_rows": 702,
+    "shared_row_pairs": 656,
+    "missing_in_natural": 16,
+    "missing_in_structured": 46,
+    "paired_after_parse_filter": 656
+  },
+  "overall": {
+    "structured_accuracy": 0.8246951219512195,
+    "natural_first_accuracy": 0.7896341463414634,
+    "natural_second_accuracy": 0.7987804878048781,
+    "natural_mean_accuracy": 0.7942073170731707,
+    "judge_disagreements": 73
+  },
+  "by_model": {
+    "claude-opus-4.6": {
+      "n": 117,
+      "structured_accuracy": 0.8547008547008547,
+      "natural_first_accuracy": 0.7435897435897436,
+      "natural_second_accuracy": 0.7863247863247863,
+      "natural_mean_accuracy": 0.7649572649572649,
+      "mean_delta": -0.08974358974358976,
+      "judge_disagreements": 14
+    },
+    "claude-sonnet-4.6": {
+      "n": 111,
+      "structured_accuracy": 0.8108108108108109,
+      "natural_first_accuracy": 0.7747747747747747,
+      "natural_second_accuracy": 0.7657657657657657,
+      "natural_mean_accuracy": 0.7702702702702703,
+      "mean_delta": -0.04054054054054057,
+      "judge_disagreements": 15
+    },
+    "gemini-3-flash": {
+      "n": 117,
+      "structured_accuracy": 0.811965811965812,
+      "natural_first_accuracy": 0.8205128205128205,
+      "natural_second_accuracy": 0.8205128205128205,
+      "natural_mean_accuracy": 0.8205128205128205,
+      "mean_delta": 0.008547008547008517,
+      "judge_disagreements": 12
+    },
+    "gemini-3.1-pro": {
+      "n": 75,
+      "structured_accuracy": 0.84,
+      "natural_first_accuracy": 0.8533333333333334,
+      "natural_second_accuracy": 0.8533333333333334,
+      "natural_mean_accuracy": 0.8533333333333334,
+      "mean_delta": 0.01333333333333342,
+      "judge_disagreements": 7
+    },
+    "gpt-5.3-instant": {
+      "n": 118,
+      "structured_accuracy": 0.8135593220338984,
+      "natural_first_accuracy": 0.7457627118644068,
+      "natural_second_accuracy": 0.7457627118644068,
+      "natural_mean_accuracy": 0.7457627118644068,
+      "mean_delta": -0.06779661016949157,
+      "judge_disagreements": 14
+    },
+    "gpt-5.4-xhigh": {
+      "n": 118,
+      "structured_accuracy": 0.8220338983050848,
+      "natural_first_accuracy": 0.8220338983050848,
+      "natural_second_accuracy": 0.8389830508474576,
+      "natural_mean_accuracy": 0.8305084745762712,
+      "mean_delta": 0.008474576271186418,
+      "judge_disagreements": 11
+    }
+  },
+  "wilcoxon": {
+    "natural_mean_vs_structured": {
+      "field": "natural_mean_accuracy",
+      "n_cells": 344,
+      "n_positive": 24,
+      "n_negative": 42,
+      "n_zero": 278,
+      "mean_delta": -0.030523255813953487,
+      "statistic": 769.0,
+      "p_value": 0.02971441252611328
+    },
+    "natural_first_vs_structured": {
+      "field": "natural_first_accuracy",
+      "n_cells": 344,
+      "n_positive": 15,
+      "n_negative": 36,
+      "n_zero": 293,
+      "mean_delta": -0.03488372093023256,
+      "statistic": 472.5,
+      "p_value": 0.06517309030223999
+    },
+    "natural_second_vs_structured": {
+      "field": "natural_second_accuracy",
+      "n_cells": 344,
+      "n_positive": 21,
+      "n_negative": 37,
+      "n_zero": 286,
+      "mean_delta": -0.02616279069767442,
+      "statistic": 662.5,
+      "p_value": 0.11782584477338283
+    }
+  },
+  "mcnemar_exact_row_level": {
+    "natural_first_vs_structured": {
+      "field": "natural_first_correct",
+      "b_structured_only": 46,
+      "c_natural_only": 23,
+      "discordant_total": 69,
+      "exact_p_value": 0.007620521855025698
+    },
+    "natural_second_vs_structured": {
+      "field": "natural_second_correct",
+      "b_structured_only": 44,
+      "c_natural_only": 27,
+      "discordant_total": 71,
+      "exact_p_value": 0.05681467793283902
+    }
+  }
+}

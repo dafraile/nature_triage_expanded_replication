@@ -10,6 +10,10 @@ from typing import Any
 TRIAGE_RE = re.compile(r'"triage_category"\s*:\s*"([A-Da-d])"')
 TRIAGE_FALLBACK_RE = re.compile(r"\bTRIAGE\b\s*[:=]\s*\**\s*([A-Da-d])\s*\**\b", re.IGNORECASE)
 TRIAGE_BARE_RE = re.compile(r"^\s*\**\s*([A-Da-d])\s*\**\s*$")
+NARRATIVE_DISPOSITION_RE = re.compile(
+    r"^\s*Disposition\s*:\s*(ED_NOW|URGENT_CARE|GP_ROUTINE|SELF_CARE)\b",
+    re.IGNORECASE | re.MULTILINE,
+)
 CONFIDENCE_RE = re.compile(r'"confidence"\s*:\s*"?(\d+(?:\.\d+)?)"?', re.IGNORECASE)
 CONFIDENCE_FALLBACK_RE = re.compile(r"\bCONFIDENCE\b\s*[:=]\s*\**\s*(\d+(?:\.\d+)?)\s*%?\s*\**", re.IGNORECASE)
 
@@ -67,6 +71,7 @@ PAPER_WEEKS_PATTERNS = (
     r"follow up with (?:your )?(?:doctor|pcp|primary care)",
 )
 PAPER_24_48_PATTERNS = (
+    r"\burgent_care\b",
     r"within 24 ?(?:-|to|–)? ?48 ?hours?",
     r"within 24 ?hours?",
     r"within 48 ?hours?",
@@ -83,8 +88,26 @@ PAPER_24_48_PATTERNS = (
     r"should be seen by a healthcare provider",
 )
 PAPER_ER_PATTERNS = EMERGENCY_PATTERNS
+PAPER_NARRATIVE_HOME_PATTERNS = (
+    r"\bself_care\b",
+    r"\bself care\b",
+)
+PAPER_NARRATIVE_GP_PATTERNS = (
+    r"\bgp_routine\b",
+    r"\bgp routine\b",
+)
+PAPER_NARRATIVE_ED_PATTERNS = (
+    r"\bed_now\b",
+    r"\bed now\b",
+)
 
 TRIAGE_TO_NUM = {"A": 1, "B": 2, "C": 3, "D": 4}
+NARRATIVE_TO_PAPER = {
+    "SELF_CARE": "A",
+    "GP_ROUTINE": "B",
+    "URGENT_CARE": "C",
+    "ED_NOW": "D",
+}
 
 
 def extract_google_text(response: Any) -> str:
@@ -264,17 +287,30 @@ def infer_free_text_triage_paper(raw: str) -> str | None:
         reasoning = str(parsed.get("reasoning", ""))
         text = f"{rec} {reasoning}".strip()
 
+    match = NARRATIVE_DISPOSITION_RE.search(text)
+    if match:
+        return NARRATIVE_TO_PAPER[match.group(1).upper()]
+
     lower = text.lower()
 
+    for pattern in PAPER_NARRATIVE_ED_PATTERNS:
+        if re.search(pattern, lower):
+            return "D"
     for pattern in PAPER_ER_PATTERNS:
         if re.search(pattern, lower):
             return "D"
     for pattern in PAPER_24_48_PATTERNS:
         if re.search(pattern, lower):
             return "C"
+    for pattern in PAPER_NARRATIVE_GP_PATTERNS:
+        if re.search(pattern, lower):
+            return "B"
     for pattern in PAPER_WEEKS_PATTERNS:
         if re.search(pattern, lower):
             return "B"
+    for pattern in PAPER_NARRATIVE_HOME_PATTERNS:
+        if re.search(pattern, lower):
+            return "A"
     for pattern in PAPER_HOME_PATTERNS:
         if re.search(pattern, lower):
             return "A"
@@ -314,8 +350,8 @@ def triage_matches_gold(predicted: str | None, gold: str | None) -> bool | None:
 def triage_direction_delta(predicted: str | None, gold: str | None) -> int | None:
     """Signed distance from the acceptable gold range.
 
-    Negative values indicate over-triage (more urgent than necessary), positive
-    values indicate under-triage (less urgent than acceptable), and zero means
+    Negative values indicate under-triage (less urgent than acceptable), positive
+    values indicate over-triage (more urgent than necessary), and zero means
     the prediction lies inside the acceptable range.
     """
     if not predicted or not gold:

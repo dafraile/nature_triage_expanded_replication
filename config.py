@@ -60,11 +60,19 @@ MODELS = {
         "thinking": "adaptive",
         "thinking_effort": "high",
     },
+    "claude-sonnet-4.6-nothink": {
+        "provider": "anthropic",
+        "model_id": "claude-sonnet-4-6",
+    },
     "claude-opus-4.6": {
         "provider": "anthropic",
         "model_id": "claude-opus-4-6",
         "thinking": "adaptive",
         "thinking_effort": "high",
+    },
+    "claude-opus-4.6-nothink": {
+        "provider": "anthropic",
+        "model_id": "claude-opus-4-6",
     },
 
     # ── Google (thinking enabled) ──
@@ -95,6 +103,9 @@ PROMPT_FORMATS = [
     "original_structured",     # The format used in the original paper
     "patient_realistic",       # How a real patient would actually type
     "patient_minimal",         # Very brief patient message
+    "narrative_prompt_a",      # Rich single-prompt narrative scaffold
+    "source_stripped_original",            # Paper wording with benchmark artifacts removed
+    "narrative_prompt_a_source_stripped",  # Prompt A applied to stripped paper wording
 ]
 
 # ──────────────────────────────────────────────

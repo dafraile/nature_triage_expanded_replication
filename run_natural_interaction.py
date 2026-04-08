@@ -46,6 +46,7 @@ from llm_utils import (  # noqa: E402
     extract_google_text,
     extract_triage_category,
     infer_free_text_triage,
+    infer_free_text_triage_paper,
     make_google_client,
     triage_matches_gold,
 )
@@ -250,6 +251,14 @@ def best_effort_label(raw_response: str) -> Optional[str]:
     return extract_triage_category(raw_response) or infer_free_text_triage(raw_response)
 
 
+def best_effort_label_for_format(raw_response: str, prompt_format: str) -> Optional[str]:
+    if not raw_response:
+        return None
+    if prompt_format.startswith("narrative_prompt_"):
+        return infer_free_text_triage_paper(raw_response)
+    return best_effort_label(raw_response)
+
+
 def run_trial(case: dict, model_name: str, model_config: dict, prompt_format: str,
               run_number: int, args: argparse.Namespace) -> NaturalTrialResult:
     user_message = case.get(prompt_format, "")
@@ -324,7 +333,7 @@ def run_trial(case: dict, model_name: str, model_config: dict, prompt_format: st
             )
 
         latency = time.time() - start
-        triage = best_effort_label(raw)
+        triage = best_effort_label_for_format(raw, prompt_format)
         return NaturalTrialResult(
             case_id=case["id"],
             case_title=case["title"],

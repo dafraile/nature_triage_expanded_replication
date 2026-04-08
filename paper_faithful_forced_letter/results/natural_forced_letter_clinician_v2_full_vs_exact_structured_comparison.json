@@ -1,0 +1,67 @@
+{
+  "overall": {
+    "forced_accuracy": 0.8522388059701492,
+    "structured_accuracy": 0.8223880597014925
+  },
+  "pairing_diagnostics": {
+    "forced_rows": 718,
+    "structured_rows": 672,
+    "shared_row_pairs": 670,
+    "missing_in_structured": 48,
+    "missing_in_forced": 2,
+    "paired_after_parse_filter": 670
+  },
+  "wilcoxon": {
+    "n_cells": 344,
+    "n_positive": 19,
+    "n_negative": 7,
+    "n_zero": 318,
+    "mean_delta": 0.029069767441860465,
+    "statistic": 84.5,
+    "p_value": 0.01714803250145893
+  },
+  "mcnemar": {
+    "forced_only": 31,
+    "structured_only": 11,
+    "discordant_total": 42,
+    "exact_p_value": 0.002887247974285856
+  },
+  "by_model": {
+    "claude-opus-4.6": {
+      "n": 120,
+      "forced_accuracy": 0.85,
+      "structured_accuracy": 0.8583333333333333,
+      "mean_delta": -0.008333333333333304
+    },
+    "claude-sonnet-4.6": {
+      "n": 118,
+      "forced_accuracy": 0.8728813559322034,
+      "structured_accuracy": 0.8050847457627118,
+      "mean_delta": 0.06779661016949157
+    },
+    "gemini-3-flash": {
+      "n": 118,
+      "forced_accuracy": 0.8050847457627118,
+      "structured_accuracy": 0.8135593220338984,
+      "mean_delta": -0.008474576271186529
+    },
+    "gemini-3.1-pro": {
+      "n": 76,
+      "forced_accuracy": 0.868421052631579,
+      "structured_accuracy": 0.8421052631578947,
+      "mean_delta": 0.026315789473684292
+    },
+    "gpt-5.3-instant": {
+      "n": 120,
+      "forced_accuracy": 0.8666666666666667,
+      "structured_accuracy": 0.8166666666666667,
+      "mean_delta": 0.050000000000000044
+    },
+    "gpt-5.4-xhigh": {
+      "n": 118,
+      "forced_accuracy": 0.8559322033898306,
+      "structured_accuracy": 0.8050847457627118,
+      "mean_delta": 0.05084745762711873
+    }
+  }
+}

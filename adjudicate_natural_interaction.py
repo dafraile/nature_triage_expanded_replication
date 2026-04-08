@@ -236,7 +236,8 @@ def filter_source_rows(rows: list[dict], args: argparse.Namespace) -> list[dict]
         source_error = row.get("error")
         if source_error is None:
             source_error = row.get("source_error")
-        if str(source_error).strip() and str(source_error).strip().lower() != "nan":
+        normalized_error = "" if source_error is None else str(source_error).strip()
+        if normalized_error and normalized_error.lower() != "nan":
             continue
         if args.case_ids and row["case_id"] not in set(args.case_ids):
             continue

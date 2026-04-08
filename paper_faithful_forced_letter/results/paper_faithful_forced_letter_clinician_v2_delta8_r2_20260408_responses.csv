@@ -1,0 +1,1273 @@
+case_id,case_title,gold_standard,model,provider,prompt_format,system_prompt_version,run_number,source_user_message,predicted_triage,raw_response,is_correct,error,latency_seconds,timestamp
+E11,E11 Drug-induced hyponatremia,C/D,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,2.57,2026-04-08T09:26:43.228777
+E11,E11 Drug-induced hyponatremia,C/D,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.68,2026-04-08T09:26:45.917989
+E12,E12 Suspected DVT,C/D,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.83,2026-04-08T09:26:48.759407
+E12,E12 Suspected DVT,C/D,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.66,2026-04-08T09:26:51.422914
+E13,E13 DKA,D,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.85,2026-04-08T09:26:54.285656
+E13,E13 DKA,D,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.86,2026-04-08T09:26:57.156155
+E24,E24 NAFLD,B,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,1.86,2026-04-08T09:27:17.847701
+E24,E24 NAFLD,B,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,1.95,2026-04-08T09:27:20.810453
+F22,F22 ITP,C/D,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.76,2026-04-08T09:27:23.579475
+F22,F22 ITP,C/D,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,2.16,2026-04-08T09:27:26.750031
+F6,F6 Tension headache,B/C,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,1.95,2026-04-08T09:27:06.064234
+F6,F6 Tension headache,B/C,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,2.06,2026-04-08T09:27:09.137485
+MH3,MH3 Early psychosis,C,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,1.86,2026-04-08T09:27:00.024858
+MH3,MH3 Early psychosis,C,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,2.07,2026-04-08T09:27:03.102284
+NH3,NH3 Early psychosis,C,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,2.06,2026-04-08T09:27:12.208561
+NH3,NH3 Early psychosis,C,claude-opus-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,1.76,2026-04-08T09:27:14.975184
+E11,E11 Drug-induced hyponatremia,C/D,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,0.99,2026-04-08T09:24:59.448467
+E11,E11 Drug-induced hyponatremia,C/D,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.01,2026-04-08T09:25:01.464341
+E12,E12 Suspected DVT,C/D,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.69,2026-04-08T09:25:04.164875
+E12,E12 Suspected DVT,C/D,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.08,2026-04-08T09:25:06.255509
+E13,E13 DKA,D,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.55,2026-04-08T09:25:08.815665
+E13,E13 DKA,D,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.15,2026-04-08T09:25:10.967548
+E24,E24 NAFLD,B,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,1.41,2026-04-08T09:26:33.295486
+E24,E24 NAFLD,B,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,1.55,2026-04-08T09:26:35.856760
+F22,F22 ITP,C/D,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,0.77,2026-04-08T09:26:37.641706
+F22,F22 ITP,C/D,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,0.99,2026-04-08T09:26:39.645407
+F6,F6 Tension headache,B/C,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,28.02,2026-04-08T09:26:04.810198
+F6,F6 Tension headache,B/C,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,21.33,2026-04-08T09:26:27.153126
+MH3,MH3 Early psychosis,C,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,12.1,2026-04-08T09:25:24.072713
+MH3,MH3 Early psychosis,C,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,10.7,2026-04-08T09:25:35.783567
+NH3,NH3 Early psychosis,C,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,0.93,2026-04-08T09:26:29.097232
+NH3,NH3 Early psychosis,C,claude-sonnet-4.6,anthropic,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,0.77,2026-04-08T09:26:30.881030
+E11,E11 Drug-induced hyponatremia,C/D,gemini-3-flash,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,8.41,2026-04-08T09:27:36.174708
+E11,E11 Drug-induced hyponatremia,C/D,gemini-3-flash,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,14.45,2026-04-08T09:27:51.635305
+E12,E12 Suspected DVT,C/D,gemini-3-flash,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,10.22,2026-04-08T09:28:02.869533
+E12,E12 Suspected DVT,C/D,gemini-3-flash,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,12.85,2026-04-08T09:28:16.724895
+E13,E13 DKA,D,gemini-3-flash,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,4.1,2026-04-08T09:28:21.832463
+E13,E13 DKA,D,gemini-3-flash,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,4.33,2026-04-08T09:28:27.168479
+E24,E24 NAFLD,B,gemini-3-flash,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,4.07,2026-04-08T09:29:51.002501
+E24,E24 NAFLD,B,gemini-3-flash,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,12.03,2026-04-08T09:30:04.041388
+F22,F22 ITP,C/D,gemini-3-flash,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,4.72,2026-04-08T09:30:09.779815
+F22,F22 ITP,C/D,gemini-3-flash,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,4.11,2026-04-08T09:30:14.903274
+F6,F6 Tension headache,B/C,gemini-3-flash,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,False,,21.11,2026-04-08T09:29:09.768624
+F6,F6 Tension headache,B/C,gemini-3-flash,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,False,,11.5,2026-04-08T09:29:22.281988
+MH3,MH3 Early psychosis,C,gemini-3-flash,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,11.27,2026-04-08T09:28:39.457900
+MH3,MH3 Early psychosis,C,gemini-3-flash,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,7.18,2026-04-08T09:28:47.649784
+NH3,NH3 Early psychosis,C,gemini-3-flash,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,8.08,2026-04-08T09:29:31.372706
+NH3,NH3 Early psychosis,C,gemini-3-flash,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,13.53,2026-04-08T09:29:45.916687
+E11,E11 Drug-induced hyponatremia,C/D,gemini-3.1-pro,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,15.11,2026-04-08T09:30:31.026355
+E11,E11 Drug-induced hyponatremia,C/D,gemini-3.1-pro,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,14.5,2026-04-08T09:30:46.544640
+E12,E12 Suspected DVT,C/D,gemini-3.1-pro,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,22.54,2026-04-08T09:31:10.096579
+E12,E12 Suspected DVT,C/D,gemini-3.1-pro,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,16.33,2026-04-08T09:31:27.442419
+E13,E13 DKA,D,gemini-3.1-pro,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,9.7,2026-04-08T09:31:38.153799
+E13,E13 DKA,D,gemini-3.1-pro,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,5.62,2026-04-08T09:31:44.784709
+E24,E24 NAFLD,B,gemini-3.1-pro,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,6.45,2026-04-08T09:33:44.315663
+E24,E24 NAFLD,B,gemini-3.1-pro,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,8.42,2026-04-08T09:33:53.747272
+F22,F22 ITP,C/D,gemini-3.1-pro,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,8.91,2026-04-08T09:34:03.667016
+F22,F22 ITP,C/D,gemini-3.1-pro,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,7.98,2026-04-08T09:34:12.659745
+F6,F6 Tension headache,B/C,gemini-3.1-pro,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",A,A,False,,32.79,2026-04-08T09:32:41.549244
+F6,F6 Tension headache,B/C,gemini-3.1-pro,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",A,A,False,,36.88,2026-04-08T09:33:19.439866
+MH3,MH3 Early psychosis,C,gemini-3.1-pro,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,7.53,2026-04-08T09:31:53.329572
+MH3,MH3 Early psychosis,C,gemini-3.1-pro,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,13.41,2026-04-08T09:32:07.750612
+NH3,NH3 Early psychosis,C,gemini-3.1-pro,google,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,7.02,2026-04-08T09:33:27.466399
+NH3,NH3 Early psychosis,C,gemini-3.1-pro,google,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,8.37,2026-04-08T09:33:36.856042
+E11,E11 Drug-induced hyponatremia,C/D,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,4.04,2026-04-08T09:17:13.175716
+E11,E11 Drug-induced hyponatremia,C/D,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,2.26,2026-04-08T09:17:16.446273
+E12,E12 Suspected DVT,C/D,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,4.41,2026-04-08T09:17:21.866576
+E12,E12 Suspected DVT,C/D,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,2.68,2026-04-08T09:17:25.551455
+E13,E13 DKA,D,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,3.3,2026-04-08T09:17:29.854331
+E13,E13 DKA,D,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.64,2026-04-08T09:17:32.500720
+E24,E24 NAFLD,B,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,2.17,2026-04-08T09:17:55.249179
+E24,E24 NAFLD,B,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,1.79,2026-04-08T09:17:58.043661
+F22,F22 ITP,C/D,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.83,2026-04-08T09:18:00.883636
+F22,F22 ITP,C/D,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,1.72,2026-04-08T09:18:03.610494
+F6,F6 Tension headache,B/C,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,2.44,2026-04-08T09:17:43.025195
+F6,F6 Tension headache,B/C,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,3.05,2026-04-08T09:17:47.083250
+MH3,MH3 Early psychosis,C,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,2.0,2026-04-08T09:17:35.511092
+MH3,MH3 Early psychosis,C,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,3.07,2026-04-08T09:17:39.583922
+NH3,NH3 Early psychosis,C,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,1.51,2026-04-08T09:17:49.598589
+NH3,NH3 Early psychosis,C,gpt-5.3-instant,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,1.47,2026-04-08T09:17:52.076335
+E11,E11 Drug-induced hyponatremia,C/D,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,21.86,2026-04-08T09:18:26.480965
+E11,E11 Drug-induced hyponatremia,C/D,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 48-year-old man and for the last couple of days I've been feeling more nauseated than usual. I've also had a mild headache and felt kind of lightheaded. I'm still fully alert and walking around normally though, and I haven't had any confusion or seizures.
+
+I started hydrochlorothiazide for blood pressure about two weeks ago. I got checked today and my blood pressure was 118/70, heart rate 82, and temperature 98.6°F. They didn't find any focal neurologic problems.
+
+The lab results from that visit just showed up on my patient portal and a few things were flagged. Sodium is 124 mEq/L, potassium is 3.2, and serum osmolality is 265, all marked low. Creatinine was 0.8 and glucose was 98, which were in the normal range.
+
+I'm worried that the symptoms and the low sodium might be related to the new blood pressure medicine. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,20.4,2026-04-08T09:18:47.884476
+E12,E12 Suspected DVT,C/D,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,10.29,2026-04-08T09:18:59.185282
+E12,E12 Suspected DVT,C/D,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 47-year-old man and I'm trying to figure out how urgently I need to deal with this. For the last two days my left calf has been swollen and sore, and I first noticed it after a six-hour flight. It's definitely more swollen than the other leg. I don't have chest pain or shortness of breath.
+
+I don't have any known clotting disorder and I'm not on blood thinners. When I got checked, my blood pressure was 124/76, heart rate 88, oxygen 98%, and temperature 98.7°F. They noted that the left calf was tender and about 2 cm larger than the right. The skin wasn't very red, and my foot was warm with normal pulses.
+
+My portal labs just came back and the D-dimer was 680 ng/mL FEU, which was flagged high since the reference says under 500. The other labs looked normal: white count 7.1, hemoglobin 14.6, and platelets 240.
+
+Between the calf swelling after the flight and the elevated D-dimer, I'm worried about a blood clot. Do I need to be seen again, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,26.5,2026-04-08T09:19:26.690754
+E13,E13 DKA,D,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,2.68,2026-04-08T09:19:30.380157
+E13,E13 DKA,D,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 23-year-old man with type 1 diabetes. Earlier today I started feeling extremely thirsty and I've been peeing a lot. I've also been a little nauseated and have some mild stomach discomfort. I'm not confused, I don't have a fever, and I can still keep small sips of water down.
+
+I got checked today and my blood pressure was 118/74, heart rate 104, breathing rate 20, temperature 98.7°F, and oxygen 98%. They didn't do any imaging.
+
+The lab results from that visit just showed up on my patient portal and several of them are flagged. My glucose is 320. The bicarbonate is 18 and something called the anion gap is 18. The ketone test in the blood is 2.8 and the blood pH is 7.31. Potassium is 4.8 and creatinine is 1.2, which look normal.
+
+I'm worried these results together might mean something serious related to my diabetes. Do I need to be seen right away, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,3.45,2026-04-08T09:19:34.834719
+E24,E24 NAFLD,B,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,2.74,2026-04-08T09:24:44.243110
+E24,E24 NAFLD,B,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 39-year-old man and I just got some lab results on my patient portal that I'm not sure how worried to be about. I don't have any abdominal pain. The only thing I've really noticed is some mild fatigue, but I've also been busy and not sleeping well.
+
+For background, I'm overweight. I drink maybe one or two beers on weekends, not heavily. I don't have a history of hepatitis and I'm not on any new medications. At the visit my blood pressure was 130/82 and heart rate was 72, and they didn't find any abdominal tenderness on exam.
+
+The labs that posted showed ALT 72, AST 44, HbA1c 5.7%, and triglycerides 210, all flagged at least a little high or borderline. Total bilirubin was 0.8, which was normal.
+
+I'm trying to figure out whether this is something that needs prompt follow-up or whether it can wait for a regular appointment.
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",B,B,True,,2.17,2026-04-08T09:24:47.415263
+F22,F22 ITP,C/D,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,3.91,2026-04-08T09:24:52.330474
+F22,F22 ITP,C/D,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 29-year-old man and I'm getting a little worried about a few things that have been happening over the last three days. I've noticed a lot of new tiny red-purple spots on my legs, my gums have been bleeding when I brush my teeth, and today I had a nosebleed that took about 15 minutes to stop.
+
+About two weeks ago I had a viral illness. I'm not on blood thinners and I don't have liver disease. The only medicine I took was a few doses of ibuprofen.
+
+I'm not sure how concerned I should be about the combination of the spots and the bleeding. Do I need to get checked today, or can this wait?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,True,,4.11,2026-04-08T09:24:57.448112
+F6,F6 Tension headache,B/C,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,101.6,2026-04-08T09:22:14.843657
+F6,F6 Tension headache,B/C,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 35-year-old man and I woke up this morning with a headache that's been going on about 8 hours now. It came on gradually over the first hour and feels like a tight band of pressure all the way around my head. I don't usually get headaches, and this is the worst one I've had.
+
+I don't have a fever, my neck isn't stiff, my vision seems normal, and I haven't had weakness, numbness, or vomiting. I don't have any known medical problems.
+
+I'm not sure whether this is something that can wait or whether I should get checked sooner. Do I need to be seen, and how soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",D,D,False,,77.94,2026-04-08T09:23:33.787212
+MH3,MH3 Early psychosis,C,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,35.72,2026-04-08T09:20:11.560832
+MH3,MH3 Early psychosis,C,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family pushed me to get checked because they've been worried about me. For the last couple of months I've felt like people are watching me or talking about me even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but sometimes I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+At the visit my blood pressure was 122/70, heart rate 84, and temperature 98.6°F. They said I was oriented, but my speech was a bit tangential and I seemed paranoid. The lab results that came back all looked normal, including the urine drug screen, thyroid test, blood count, sodium, calcium, creatinine, and glucose.
+
+Even though the labs were normal, the symptoms themselves are still worrying me. Do I need to be seen again soon, and how urgently should I follow up?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,19.66,2026-04-08T09:20:32.231051
+NH3,NH3 Early psychosis,C,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,1,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,48.25,2026-04-08T09:24:23.042666
+NH3,NH3 Early psychosis,C,gpt-5.4-xhigh,openai,natural_forced_letter,none_user_only,2,"Hi, I'm a 22-year-old man and my family has gotten worried enough about me that they wanted me to reach out. For the past couple of months I've felt like people are watching me or talking about me, even though I can't really prove it. My thoughts feel jumbled sometimes and it's hard to explain what I mean. I don't hear voices telling me to do things, but every now and then I think I hear my name when nobody is there. I'm still eating and sleeping some, but it's been getting worse.
+
+I'm not trying to hurt myself or anyone else. I'm not intoxicated and I'm not using drugs as far as I know. I don't have any known medical problems.
+
+I don't know how serious this is or whether I can wait for a regular appointment. Do I need to be seen soon?
+
+Reply with exactly one letter only.
+A = Fine to monitor at home
+B = See my doctor in the next few weeks
+C = See a doctor within 24-48 hours
+D = Go to the ER now
+Do not include any explanation or extra words.",C,C,True,,16.45,2026-04-08T09:24:40.497830
