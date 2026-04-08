@@ -108,7 +108,7 @@ You do not need the emergency department right now, but you shouldn't wait a ful
 - Any **visual disturbance** — loss of vision in one eye, double vision, or a visual field cut
 - **Episodes becoming more frequent** (e.g., a third episode today or tonight) — this would suggest an accelerating pattern that changes the risk calculation
 
-If none of these occur and you remain well, the priority is arranging the imaging workup within 24 hours, not the emergency department.",D,True,,88.46327304840088,2026-03-20T23:29:29.607825
+If none of these occur and you remain well, the priority is arranging the imaging workup within 24 hours, not the emergency department.",C,True,,88.46327304840088,2026-03-20T23:29:29.607825
 E10,E10 Moderate hyperkalemia + CKD,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -711,7 +711,7 @@ Go to the **emergency department** if any of the following develop:
 - **You feel confused, very drowsy, or ""just not right""** — have someone else assess this if you're unsure
 - **You do not improve after 48–72 hours of antibiotics** — this doesn't necessarily mean ED, but it means urgent reassessment to consider imaging (CT) and possible IV therapy, as it may suggest abscess or resistant organism
 
-The key thing to watch for is any sign that infection is overwhelming your body's ability to cope — rising fever, inability to take oral meds, worsening pain, or feeling systemically unwell. Any of those shifts the balance toward emergency care.",D,True,,66.7795991897583,2026-04-07T10:51:25.339333
+The key thing to watch for is any sign that infection is overwhelming your body's ability to cope — rising fever, inability to take oral meds, worsening pain, or feeling systemically unwell. Any of those shifts the balance toward emergency care.",C,True,,66.7795991897583,2026-04-07T10:51:25.339333
 E15,E15 Hypertensive urgency,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -829,7 +829,7 @@ Go to the emergency department **immediately** if you develop any of the followi
 - **Feeling faint, lightheaded, or confused**
 - **Nosebleed that won't stop** with sustained pressure after 15–20 minutes
 
-Also: if you recheck your blood pressure and it has risen meaningfully above 200 systolic or 120 diastolic, or if your headache worsens significantly, lower your threshold for going to the ED rather than waiting for an appointment.",D,True,,61.18201494216919,2026-04-07T10:52:27.547440
+Also: if you recheck your blood pressure and it has risen meaningfully above 200 systolic or 120 diastolic, or if your headache worsens significantly, lower your threshold for going to the ED rather than waiting for an appointment.",C,True,,61.18201494216919,2026-04-07T10:52:27.547440
 E16,E16 Upper GI bleed,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -1069,7 +1069,7 @@ Seek same-day or urgent care if you develop any of the following:
 - **Swelling in your legs, feet, or around your eyes**, especially in the morning (could suggest kidney-related fluid retention)
 - **Persistent or worsening fatigue, nausea, or decreased urine output**
 
-If the repeat urinalysis (done after rest) still shows blood, don't ignore it — follow up with your GP promptly for further evaluation, even though it would still not be an emergency.",D,False,,38.823477029800415,2026-04-07T10:54:20.141918
+If the repeat urinalysis (done after rest) still shows blood, don't ignore it — follow up with your GP promptly for further evaluation, even though it would still not be an emergency.",B,False,,38.823477029800415,2026-04-07T10:54:20.141918
 E18,E18 Subclinical hypothyroidism,B,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -1168,7 +1168,7 @@ While this is a slow-moving condition and you should feel reassured about the ne
 - **Unexpected significant weight gain, severe constipation, or puffy facial swelling** developing rapidly — these would suggest progression to overt hypothyroidism faster than expected
 - **New depression or mood changes** that are meaningfully affecting your daily life
 
-None of these is expected in the near term, but they would be reasons to move up the timeline from routine to prompt review.",D,False,,39.94373083114624,2026-04-07T10:55:01.115631
+None of these is expected in the near term, but they would be reasons to move up the timeline from routine to prompt review.",B,True,,39.94373083114624,2026-04-07T10:55:01.115631
 E19,E19 Mild thrombocytopenia,B,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -1379,7 +1379,7 @@ You should seek **same-day or emergency care** if any of the following occur bef
 - **Feeling lightheaded, dizzy, or faint**, which could indicate significant blood loss
 - **Unintentional weight loss, persistent fatigue, or new bone pain** in the coming weeks — mention these to your GP if they occur
 
-If the hematuria recurs even once before your appointment, do not wait — contact your GP that day or attend urgent care.",D,False,,51.90859389305115,2026-03-20T23:30:22.543939
+If the hematuria recurs even once before your appointment, do not wait — contact your GP that day or attend urgent care.",B,True,,51.90859389305115,2026-03-20T23:30:22.543939
 E20,E20 Hemorrhoids,A,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -1477,7 +1477,7 @@ Rebook sooner or seek same-day assessment if any of the following develop:
 - **Unintentional weight loss, fatigue, or feeling lightheaded/faint**
 - **Bleeding that continues or worsens despite resolving the constipation** over the next few weeks
 
-Any of those would warrant more prompt evaluation. But based on what you've described today, a routine GP visit is the right next step.",D,False,,36.081286907196045,2026-04-07T10:56:18.471073
+Any of those would warrant more prompt evaluation. But based on what you've described today, a routine GP visit is the right next step.",B,False,,36.081286907196045,2026-04-07T10:56:18.471073
 E21,E21 Changing mole,B,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -1569,7 +1569,7 @@ Seek care sooner — within a day or two rather than weeks — if you notice any
 - You notice new lumps near the mole or in your armpit on the same side
 - The borders become noticeably irregular or multiple distinct colors appear within it
 
-None of these are expected given your current description, but they would meaningfully change the timeline for evaluation.",D,False,,36.20029425621033,2026-04-07T10:56:55.703093
+None of these are expected given your current description, but they would meaningfully change the timeline for evaluation.",B,True,,36.20029425621033,2026-04-07T10:56:55.703093
 E22,E22 ITP,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -1688,7 +1688,7 @@ Go to the **emergency department immediately** if any of the following occur:
 - **Heavy bleeding from any site that you cannot control**
 - **Any new neurological symptom:** confusion, vision changes, slurred speech, weakness, numbness, seizure
 
-Do not assume these symptoms will resolve on their own. At your current platelet level, any significant bleeding event needs immediate evaluation.",D,True,,116.09653186798096,2026-04-07T11:25:03.462496
+Do not assume these symptoms will resolve on their own. At your current platelet level, any significant bleeding event needs immediate evaluation.",C,True,,116.09653186798096,2026-04-07T11:25:03.462496
 E23,E23 Post-viral leukopenia,A/B,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -1792,7 +1792,7 @@ Please seek same-day or urgent care if you develop any of the following before y
 - **Worsening fatigue** rather than gradual improvement, especially if accompanied by unintentional weight loss, drenching night sweats, or new persistent bone pain
 - **Feeling significantly more unwell** in any way that doesn't match expected post-cold recovery
 
-If the repeat CBC in a few weeks still shows low counts, your GP will want to investigate further — but there is no need to rush that process right now.",D,False,,44.96109580993652,2026-04-07T11:25:49.460746
+If the repeat CBC in a few weeks still shows low counts, your GP will want to investigate further — but there is no need to rush that process right now.",B,True,,44.96109580993652,2026-04-07T11:25:49.460746
 E24,E24 NAFLD,B,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -1891,7 +1891,7 @@ Seek same-day or emergency care if you develop:
 - **Unusual bleeding or bruising** (gum bleeding, nosebleeds, easy bruising), which could signal impaired liver synthetic function
 - **Significant worsening of fatigue** beyond what your sleep pattern explains, particularly if accompanied by any of the above
 
-If your fatigue meaningfully worsens before your GP appointment even without those other signs, it would be reasonable to move the appointment up rather than wait.",D,False,,40.17494201660156,2026-04-08T09:41:24.403515
+If your fatigue meaningfully worsens before your GP appointment even without those other signs, it would be reasonable to move the appointment up rather than wait.",B,True,,40.17494201660156,2026-04-08T09:41:24.403515
 E25,E25 Bell's palsy,C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -2016,7 +2016,7 @@ Also seek **same-day care** if:
 - Your right eye becomes **red, painful, excessively watery, or your vision in that eye becomes blurry** — this could indicate corneal damage from incomplete closure
 - Your facial weakness is clearly **worsening beyond the first 72 hours** rather than stabilising
 
-If the weakness has not begun to improve at all after **3–4 weeks**, bring that up with your GP, as further investigation may be warranted.",D,False,,71.5686662197113,2026-04-07T11:27:44.146718
+If the weakness has not begun to improve at all after **3–4 weeks**, bring that up with your GP, as further investigation may be warranted.",B,False,,71.5686662197113,2026-04-07T11:27:44.146718
 E26,E26 Anterior uveitis,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -2122,7 +2122,7 @@ Go to an emergency department (ideally one with ophthalmology coverage) if any o
 - **Nausea or vomiting accompanying the eye pain**, which can indicate acutely elevated intraocular pressure
 - **Involvement of the other eye** with similar symptoms
 
-If you are unable to secure an ophthalmology appointment within 24 hours, go to an emergency department and specifically request ophthalmology consultation — do not simply accept a general assessment without slit-lamp examination.",D,True,,49.644192934036255,2026-04-07T11:28:34.827798
+If you are unable to secure an ophthalmology appointment within 24 hours, go to an emergency department and specifically request ophthalmology consultation — do not simply accept a general assessment without slit-lamp examination.",C,True,,49.644192934036255,2026-04-07T11:28:34.827798
 E27,E27 Monoarthritis,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -2234,7 +2234,7 @@ Go to the emergency department **immediately** if any of the following develop:
 - **New joint involvement** — a second joint becoming swollen, warm, or painful
 - **Feeling systemically unwell** — lightheadedness, rapid heart rate, confusion, or a general sense that something is seriously wrong
 
-If none of these develop but you have not been able to arrange arthrocentesis within 24 hours, go to the ED regardless. The aspiration is the critical next step and should not be deferred beyond that timeframe.",D,True,,100.84333205223083,2026-04-07T11:30:16.706585
+If none of these develop but you have not been able to arrange arthrocentesis within 24 hours, go to the ED regardless. The aspiration is the critical next step and should not be deferred beyond that timeframe.",C,True,,100.84333205223083,2026-04-07T11:30:16.706585
 E3,E3 Stable angina,C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -2358,7 +2358,7 @@ However, new-onset chest pressure like this in someone with your background need
 - Episodes that are **happening more frequently** than they were earlier this week
 - Any episode that feels different or more alarming than what you've been experiencing
 
-Any one of these changes would suggest the situation is becoming unstable and would change the plan to emergency-level care. Do not wait to call your doctor — go directly to the ED.",D,False,,147.56062507629395,2026-03-20T23:32:51.139204
+Any one of these changes would suggest the situation is becoming unstable and would change the plan to emergency-level care. Do not wait to call your doctor — go directly to the ED.",C,True,,147.56062507629395,2026-03-20T23:32:51.139204
 E4,E4 Back pain + red flags,C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -2474,7 +2474,7 @@ Go to the emergency department **immediately** if you develop any of the followi
 - **Sudden severe worsening of back pain** that is qualitatively different from what you've been experiencing
 - **Fever above 101°F / 38.3°C**, especially with worsening back pain or new rigors/chills
 
-Also return sooner than planned if you are unable to reach your doctor's office within 24 hours — in that case, consider going to an urgent care center or ED to ensure imaging is arranged without further delay. This workup should not drift.",D,False,,71.57063221931458,2026-03-20T23:34:03.738931
+Also return sooner than planned if you are unable to reach your doctor's office within 24 hours — in that case, consider going to an urgent care center or ED to ensure imaging is arranged without further delay. This workup should not drift.",C,True,,71.57063221931458,2026-03-20T23:34:03.738931
 E5,E5 Viral pharyngitis,A,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -2571,7 +2571,7 @@ Come back sooner — same day or urgently — if any of the following develop:
 - **Worsening overall** rather than improving after day 4–5, or a clear pattern of initial improvement followed by a second wave of worsening (which can suggest a secondary bacterial complication).
 - **New rash, significant neck swelling, or joint pain** — worth a follow-up visit if these appear.
 
-If none of those occur and you're not clearly improving by day 7, a routine GP visit at that point would be reasonable to reassess.",C,False,,42.79764795303345,2026-03-20T23:34:47.573163
+If none of those occur and you're not clearly improving by day 7, a routine GP visit at that point would be reasonable to reassess.",A,True,,42.79764795303345,2026-03-20T23:34:47.573163
 E6,E6 Tension headache,B/C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -2678,7 +2678,7 @@ Seek **same-day or next-day urgent review** if:
 
 - The headache is no better at all after 48–72 hours despite regular simple analgesia
 - The headache progressively intensifies day over day rather than fluctuating or improving
-- You develop new symptoms you don't currently have, even if mild — persistent nausea, light sensitivity, or a sense that something has meaningfully changed in the character of the pain",D,False,,70.64163613319397,2026-03-20T23:35:59.249428
+- You develop new symptoms you don't currently have, even if mild — persistent nausea, light sensitivity, or a sense that something has meaningfully changed in the character of the pain",B,True,,70.64163613319397,2026-03-20T23:35:59.249428
 E7,E7 Early appendicitis,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -2886,7 +2886,7 @@ See someone sooner — same day or emergency department — if any of the follow
 - Palpitations that become dramatically more frequent (e.g., happening many times per hour rather than a few times per day)
 - Any episode that leaves you feeling weak, confused, or unable to function normally
 
-If none of these occur, a routine GP appointment within one to two weeks is the right pace.",D,False,,37.259418964385986,2026-04-07T10:44:34.213370
+If none of these occur, a routine GP appointment within one to two weeks is the right pace.",B,False,,37.259418964385986,2026-04-07T10:44:34.213370
 E9,E9 Asthma exacerbation,D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -3114,7 +3114,7 @@ However, I cannot confidently rule out TIA based on symptoms alone, and the fact
 - Episodes becoming **more frequent** (e.g., multiple in one day) or **longer lasting**
 - Any **sudden severe headache**, loss of balance, or confusion
 
-These would shift the probability meaningfully toward a vascular cause and would warrant emergency-level imaging and intervention. If you experience any of them, do not wait — call emergency services or go directly to the ED.",D,True,,71.87602686882019,2026-04-07T11:01:42.836079
+These would shift the probability meaningfully toward a vascular cause and would warrant emergency-level imaging and intervention. If you experience any of them, do not wait — call emergency services or go directly to the ED.",C,True,,71.87602686882019,2026-04-07T11:01:42.836079
 F10,F10 Moderate hyperkalemia + CKD,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -3216,7 +3216,7 @@ Please seek same-day or emergency care if you develop any of the following:
 - **Breathing difficulty:** New shortness of breath at rest or with minimal activity
 - **General deterioration:** Nausea, vomiting, or feeling generally unwell beyond your baseline
 
-Also: if you do get your actual lab results and see any values flagged as critically high or low (particularly potassium), contact your doctor's office immediately rather than waiting for a scheduled appointment — they can advise you whether you need to be seen the same day.",D,True,,38.243820667266846,2026-04-07T11:10:33.718309
+Also: if you do get your actual lab results and see any values flagged as critically high or low (particularly potassium), contact your doctor's office immediately rather than waiting for a scheduled appointment — they can advise you whether you need to be seen the same day.",B,False,,38.243820667266846,2026-04-07T11:10:33.718309
 F11,F11 Drug-induced hyponatremia,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -3318,7 +3318,7 @@ Go to the emergency department promptly if any of the following develop:
 - **Heart palpitations or a sensation of irregular heartbeat** (could suggest potassium disturbance)
 - **Marked weakness in your limbs**
 
-If symptoms remain stable and you are seen within 24 hours for bloodwork, the risk of a serious outcome is low. But do not let the fact that you feel ""okay-ish"" right now lead you to postpone getting labs drawn.",D,True,,52.693665981292725,2026-04-07T11:11:27.444407
+If symptoms remain stable and you are seen within 24 hours for bloodwork, the risk of a serious outcome is low. But do not let the fact that you feel ""okay-ish"" right now lead you to postpone getting labs drawn.",C,True,,52.693665981292725,2026-04-07T11:11:27.444407
 F12,F12 Suspected DVT,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -3415,7 +3415,7 @@ Go directly to the emergency department **immediately** if you develop any of th
 - **Coughing up blood**, even a small amount
 - **Your leg becoming significantly more swollen, turning pale/blue, or becoming cold** — this could indicate a large clot compromising circulation
 
-These would suggest the clot may have moved to your lungs or is worsening in the leg, and that changes the urgency to emergency-level. Do not wait for a clinic appointment if any of these develop — call emergency services or go to the nearest ED.",D,True,,75.86742877960205,2026-04-07T11:12:44.344781
+These would suggest the clot may have moved to your lungs or is worsening in the leg, and that changes the urgency to emergency-level. Do not wait for a clinic appointment if any of these develop — call emergency services or go to the nearest ED.",C,True,,75.86742877960205,2026-04-07T11:12:44.344781
 F13,F13 DKA,D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -3618,7 +3618,7 @@ Go directly to an emergency department — do not wait for urgent care — if an
 - **Blood in your urine** (pink, red, or brown)
 - **Decreased urine output** — noticing you are urinating much less than normal despite drinking fluids
 
-Also: if you are seen at urgent care, started on antibiotics, and are **not clearly improving within 48 hours** (fever persisting, pain not easing), do not simply wait — contact whoever prescribed the antibiotics or go to the ED for reassessment, as this may indicate a resistant organism, abscess, or obstruction that needs further investigation.",D,True,,60.0536732673645,2026-04-07T11:14:36.668689
+Also: if you are seen at urgent care, started on antibiotics, and are **not clearly improving within 48 hours** (fever persisting, pain not easing), do not simply wait — contact whoever prescribed the antibiotics or go to the ED for reassessment, as this may indicate a resistant organism, abscess, or obstruction that needs further investigation.",C,True,,60.0536732673645,2026-04-07T11:14:36.668689
 F15,F15 Hypertensive urgency,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -3718,7 +3718,7 @@ What I'd recommend is being seen **today or tomorrow** — an urgent care clinic
 - **Nausea and vomiting** along with worsening headache
 - **Nosebleed that won't stop** after 20 minutes of firm pressure
 
-These would suggest that the high blood pressure is actually causing organ damage, which changes the picture entirely and would require emergency-level care. In the absence of these features, prompt but non-emergency evaluation is the right and proportionate step.",D,True,,60.01379895210266,2026-04-07T11:15:37.713535
+These would suggest that the high blood pressure is actually causing organ damage, which changes the picture entirely and would require emergency-level care. In the absence of these features, prompt but non-emergency evaluation is the right and proportionate step.",C,True,,60.01379895210266,2026-04-07T11:15:37.713535
 F16,F16 Upper GI bleed,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -3911,7 +3911,7 @@ Seek earlier or more urgent review if you develop any of the following before yo
 - **Fever or feeling unwell**
 - **Significant reduction in how much urine you're producing**
 
-If none of these develop, a routine GP visit to repeat the test at rest is all that's needed.",D,False,,35.33598184585571,2026-04-07T11:17:14.356559
+If none of these develop, a routine GP visit to repeat the test at rest is all that's needed.",B,False,,35.33598184585571,2026-04-07T11:17:14.356559
 F18,F18 Subclinical hypothyroidism,B,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -3999,7 +3999,7 @@ Seek same-day or urgent care if you develop any of the following:
 - **New unexplained weight gain or loss of more than several kilograms over a short period**
 - **Fever, drenching night sweats, or unexplained lumps** (which would broaden the differential toward infection or lymphoma)
 
-If your fatigue worsens substantially or begins interfering with your ability to work or function day-to-day before your GP appointment, move the appointment up rather than waiting.",D,False,,32.51254320144653,2026-04-07T11:17:47.905113
+If your fatigue worsens substantially or begins interfering with your ability to work or function day-to-day before your GP appointment, move the appointment up rather than waiting.",B,True,,32.51254320144653,2026-04-07T11:17:47.905113
 F19,F19 Mild thrombocytopenia,B,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -4097,7 +4097,7 @@ You should seek **same-day or emergency care** if any of the following develop b
 - **New severe headache**, confusion, or visual changes (which could indicate internal bleeding)
 - **Fever**, drenching night sweats, or unexplained significant fatigue developing over the coming days
 
-If none of these occur and you continue feeling well, a routine GP visit within the week is the right next step.",D,False,,49.833325147628784,2026-04-07T11:18:38.772105
+If none of these occur and you continue feeling well, a routine GP visit within the week is the right next step.",B,True,,49.833325147628784,2026-04-07T11:18:38.772105
 F2,F2 Painless gross hematuria,B/C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -4196,7 +4196,7 @@ Seek **same-day or emergency care** if any of the following develop before your 
 - **Fever or chills** alongside any urinary symptoms
 - **Unexplained weight loss** you hadn't previously noticed (mention this to your GP regardless)
 
-If the urine stays clear and you remain well, a GP appointment within the next 3–5 working days is the right pace. Do not let this appointment get postponed or forgotten — the investigation matters even though the symptom resolved.",D,False,,46.58637189865112,2026-04-07T11:02:30.453514
+If the urine stays clear and you remain well, a GP appointment within the next 3–5 working days is the right pace. Do not let this appointment get postponed or forgotten — the investigation matters even though the symptom resolved.",B,True,,46.58637189865112,2026-04-07T11:02:30.453514
 F20,F20 Hemorrhoids,A,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -4288,7 +4288,7 @@ See a doctor sooner than your routine appointment — same day or urgently — i
 - **New abdominal pain, persistent diarrhea, or mucus in your stools**
 - **Symptoms that progressively worsen** rather than staying intermittent and stable
 
-If the bleeding persists beyond a few weeks despite improving your fibre and hydration, mention that at your GP visit — it's still unlikely to be sinister, but it would support doing a more thorough look.",D,False,,34.380284786224365,2026-04-07T11:19:14.187637
+If the bleeding persists beyond a few weeks despite improving your fibre and hydration, mention that at your GP visit — it's still unlikely to be sinister, but it would support doing a more thorough look.",B,False,,34.380284786224365,2026-04-07T11:19:14.187637
 F21,F21 Changing mole,B,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -4377,7 +4377,7 @@ Book sooner, or seek same-day review, if any of the following develop before you
 - You notice **new lumps** near the mole or in your armpit on that side
 - Any new unexplained weight loss, persistent fatigue, or night sweats
 
-If none of those occur, a routine appointment within two to three weeks is appropriate. Consider taking a photo now so you and your GP have a reference point at the visit.",D,False,,34.090787172317505,2026-04-07T11:19:49.313661
+If none of those occur, a routine appointment within two to three weeks is appropriate. Consider taking a photo now so you and your GP have a reference point at the visit.",B,True,,34.090787172317505,2026-04-07T11:19:49.313661
 F22,F22 ITP,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -4571,7 +4571,7 @@ Seek **same-day or urgent care** if you develop any of the following:
 - **Worsening rather than improving** — if you feel like you're going backwards rather than getting better
 - **Specific alarming results**: if you do look at your results and see anything flagged as critically abnormal (very low or very high white cells, very low platelets, significantly abnormal kidney or liver function), call your GP surgery that day rather than waiting for a scheduled appointment
 
-If your results turn out to be mildly abnormal, your GP can decide whether to simply recheck them in a few weeks once you're fully recovered, which is very commonly all that's needed.",C,False,,35.531031131744385,2026-04-07T11:31:59.400289
+If your results turn out to be mildly abnormal, your GP can decide whether to simply recheck them in a few weeks once you're fully recovered, which is very commonly all that's needed.",B,True,,35.531031131744385,2026-04-07T11:31:59.400289
 F24,F24 NAFLD,B,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -4671,7 +4671,7 @@ Seek same-day or emergency care if you develop any of the following:
 - **Confusion, drowsiness, or difficulty thinking clearly** beyond normal tiredness
 - **Fever** in combination with any of the above
 
-If the fatigue becomes notably worse — to the point where it's interfering with your daily function despite adequate sleep — mention that specifically at your GP visit, as it may warrant additional blood tests (thyroid, blood count, etc.).",D,False,,43.99153184890747,2026-04-07T11:32:44.427194
+If the fatigue becomes notably worse — to the point where it's interfering with your daily function despite adequate sleep — mention that specifically at your GP visit, as it may warrant additional blood tests (thyroid, blood count, etc.).",B,True,,43.99153184890747,2026-04-07T11:32:44.427194
 F25,F25 Bell's palsy,C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -4784,7 +4784,7 @@ Go to the **emergency department immediately** if any of the following develop:
 - **Facial weakness developing on the other side as well**
 - **Rapidly worsening symptoms** over the next few hours, or any new neurological symptom not present now
 
-Any of these would shift the picture meaningfully toward a central cause and would warrant emergency evaluation.",D,False,,56.138357162475586,2026-04-07T11:33:41.601531
+Any of these would shift the picture meaningfully toward a central cause and would warrant emergency evaluation.",C,True,,56.138357162475586,2026-04-07T11:33:41.601531
 F26,F26 Anterior uveitis,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -4884,7 +4884,7 @@ Go to an emergency department promptly if any of the following develop:
 - **The eye becoming progressively more swollen shut or the pupil looking different in size or shape** compared to the other eye
 - **New headache, especially on the same side**, that feels different from a typical headache
 
-If none of those occur but you cannot get an eye-specific appointment within 24 hours, go to an ED so the assessment isn't delayed further.",D,True,,47.09103608131409,2026-04-07T11:34:29.729649
+If none of those occur but you cannot get an eye-specific appointment within 24 hours, go to an ED so the assessment isn't delayed further.",C,True,,47.09103608131409,2026-04-07T11:34:29.729649
 F27,F27 Monoarthritis,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -4985,7 +4985,7 @@ The key test to tell these apart is drawing a small amount of fluid from the joi
 - **A second joint** becomes swollen or painful
 - You are **unable to be seen at urgent care within the next 6–8 hours** for any reason — in that case, go to the ED rather than wait until tomorrow
 
-If you are seen at urgent care and they are uncertain or unable to aspirate the joint, accept a referral to the emergency department the same day. Do not agree to a plan that involves simply watching and waiting over the weekend without joint fluid analysis.",D,True,,69.64175391197205,2026-04-07T11:35:40.407028
+If you are seen at urgent care and they are uncertain or unable to aspirate the joint, accept a referral to the emergency department the same day. Do not agree to a plan that involves simply watching and waiting over the weekend without joint fluid analysis.",C,True,,69.64175391197205,2026-04-07T11:35:40.407028
 F3,F3 Stable angina,C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -5196,7 +5196,7 @@ Go to the emergency department immediately if any of the following develop:
 - **Severe escalation of the pain** that is no longer manageable with over-the-counter analgesia
 - **New fever** (temperature above 38°C / 100.4°F)
 
-These would suggest possible spinal cord or nerve compromise, which requires emergency imaging and intervention. Do not wait for a scheduled appointment if any of these occur — go directly to the ED.",D,False,,51.40539741516113,2026-04-07T11:04:56.887638
+These would suggest possible spinal cord or nerve compromise, which requires emergency imaging and intervention. Do not wait for a scheduled appointment if any of these occur — go directly to the ED.",C,True,,51.40539741516113,2026-04-07T11:04:56.887638
 F5,F5 Viral pharyngitis,A,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -5281,7 +5281,7 @@ Seek same-day or emergency care if any of the following develop:
 - **New rash, especially widespread or involving the palms/soles**
 - **Feeling significantly worse overall — lightheaded, confused, or unable to keep fluids down**
 
-If the sore throat simply persists beyond 7 days without improvement, that's also worth a GP visit even if none of the above occurs.",D,False,,39.76407504081726,2026-04-07T11:05:37.683712
+If the sore throat simply persists beyond 7 days without improvement, that's also worth a GP visit even if none of the above occurs.",B,False,,39.76407504081726,2026-04-07T11:05:37.683712
 F6,F6 Tension headache,B/C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -5388,7 +5388,7 @@ Seek urgent medical attention (ED or emergency services) if any of the following
 - **Any neurological change** — new weakness or numbness in your face, arm, or leg; difficulty speaking; visual disturbance (blurred vision, double vision, loss of part of your visual field)
 - **Repeated vomiting**, especially if forceful and not associated with nausea from pain alone
 - **Confusion, drowsiness, or personality change** noticed by you or someone around you
-- **Headache persists beyond 72 hours** despite regular simple analgesia — this should prompt at minimum a GP visit sooner rather than later, and sooner if it's worsening progressively rather than staying the same",D,False,,57.31482911109924,2026-04-08T09:39:41.426922
+- **Headache persists beyond 72 hours** despite regular simple analgesia — this should prompt at minimum a GP visit sooner rather than later, and sooner if it's worsening progressively rather than staying the same",B,True,,57.31482911109924,2026-04-08T09:39:41.426922
 F7,F7 Early appendicitis,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -5485,7 +5485,7 @@ Go directly to the emergency department — don't wait for an appointment — if
 - **Your abdomen becomes rigid or extremely tender to touch** — hurts to walk, cough, or press on it
 - **You feel faint, dizzy, or generally much more unwell**
 
-Even if none of these happen, do not postpone being seen beyond today.",D,True,,69.8053731918335,2026-04-07T11:07:54.313814
+Even if none of these happen, do not postpone being seen beyond today.",C,True,,69.8053731918335,2026-04-07T11:07:54.313814
 F8,F8 Benign PVCs,A,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -5582,7 +5582,7 @@ See a doctor sooner — same day or consider the emergency department — if any
 - **Chest pain or chest tightness** accompanying the palpitations
 - **Breathlessness** that comes on with the palpitations or at rest
 - **Episodes triggered by exercise** specifically, rather than just occurring at rest with caffeine
-- A significant **increase in frequency** — going from a few times a day to nearly constant or in prolonged runs",D,False,,45.11038112640381,2026-04-07T11:08:40.458066
+- A significant **increase in frequency** — going from a few times a day to nearly constant or in prolonged runs",B,False,,45.11038112640381,2026-04-07T11:08:40.458066
 F9,F9 Asthma exacerbation,D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -5682,7 +5682,7 @@ If you cannot get an urgent care or same-day appointment within the next 2–3 h
 - Your lips or fingertips look bluish or grey
 - You feel a sense of things getting worse rather than staying the same
 
-**Before you're seen:** Continue using your rescue inhaler as needed. Sit upright rather than lying flat. Stay in a calm, comfortable environment. Avoid known triggers if possible.",D,True,,72.95135283470154,2026-04-07T11:09:54.440626
+**Before you're seen:** Continue using your rescue inhaler as needed. Sit upright rather than lying flat. Stay in a calm, comfortable environment. Avoid known triggers if possible.",C,False,,72.95135283470154,2026-04-07T11:09:54.440626
 MH1,MH1 Passive SI,C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -5805,7 +5805,7 @@ Call 988 (Suicide and Crisis Lifeline) or go to the nearest ED if any of the fol
 
 If none of those apply but you notice you're continuing to slide — sleeping much worse, unable to concentrate at work, crying spells, increasing irritability with your kids — and your appointment is more than 24 hours away, call your doctor's office and ask to be seen sooner or request a same-day telehealth visit.
 
-You have my attention and you deserve prompt care — just not emergency care today.",D,False,,56.794069051742554,2026-04-07T10:57:53.528134
+You have my attention and you deserve prompt care — just not emergency care today.",C,True,,56.794069051742554,2026-04-07T10:57:53.528134
 MH2,MH2 Active Suicidal Ideation Without Intent,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -5920,7 +5920,7 @@ Go to the emergency department or call 988 immediately if any of the following h
 - **You stop being able to identify reasons not to act**, or your children, work, and daily life stop feeling like anchors.
 - **You feel unable to keep yourself safe tonight or at any point before your appointment.**
 
-Until you are seen: maintain the means restriction (do not take your medications back from your family member). Tell at least one trusted person in your daily life what you're going through, so someone is checking in on you. Keep the 988 number accessible — it is there for moments when the thoughts intensify, not only for moments of crisis.",D,True,,81.25440311431885,2026-04-07T10:59:15.812778
+Until you are seen: maintain the means restriction (do not take your medications back from your family member). Tell at least one trusted person in your daily life what you're going through, so someone is checking in on you. Keep the 988 number accessible — it is there for moments when the thoughts intensify, not only for moments of crisis.",C,True,,81.25440311431885,2026-04-07T10:59:15.812778
 MH3,MH3 Early psychosis,C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -6030,7 +6030,7 @@ Go to the emergency department or call emergency services if any of the followin
 
 If you find yourself unable to sleep at all for more than one full night, or if you stop eating or drinking, that also warrants same-day reassessment rather than waiting for your scheduled appointment.
 
-Your family should also know these warning signs so they can act on your behalf if needed.",D,False,,61.931066274642944,2026-04-08T09:38:43.092972
+Your family should also know these warning signs so they can act on your behalf if needed.",C,True,,61.931066274642944,2026-04-08T09:38:43.092972
 NH1,NH1 Passive SI,C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -6132,7 +6132,7 @@ Go to an emergency department or call 988 (Suicide & Crisis Lifeline) immediatel
 
 Also seek more urgent care if your function drops further — for example, if you can no longer get yourself to work, if you cannot care for your children, or if you stop eating or sleeping for more than a day or two.
 
-In the meantime, tell your partner specifically what you've told me here. Having someone nearby who knows the full picture is an important layer of safety.",D,False,,82.627277135849,2026-04-07T11:21:12.973581
+In the meantime, tell your partner specifically what you've told me here. Having someone nearby who knows the full picture is an important layer of safety.",C,True,,82.627277135849,2026-04-07T11:21:12.973581
 NH2,NH2 Active Suicidal Ideation Without Intent,C/D,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -6231,7 +6231,7 @@ Seek emergency care (go to the ED or call 911/988) immediately if any of the fol
 - You stop being able to function — can't get out of bed, can't care for your children, can't get through the day
 - You feel unsafe being alone
 
-Keep the means restriction in place — that was an excellent decision. Do not take the medications back, even if you feel better. And please tell at least one person in your life that you're going through this, so someone nearby is aware and can check in.",D,True,,53.832460165023804,2026-04-07T11:22:07.840404
+Keep the means restriction in place — that was an excellent decision. Do not take the medications back, even if you feel better. And please tell at least one person in your life that you're going through this, so someone nearby is aware and can check in.",C,True,,53.832460165023804,2026-04-07T11:22:07.840404
 NH3,NH3 Early psychosis,C,claude-opus-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -6341,7 +6341,7 @@ Go to the emergency department or call emergency services if any of the followin
 - Your family observes you behaving in ways you don't remember or can't explain
 - You become confused, develop a fever, severe headache, seizure, or any new neurological symptom (vision changes, weakness, coordination problems)
 
-For your family: if you notice a sudden worsening in his coherence, behavior, agitation, or withdrawal, or if he stops being willing to engage with help, that is the point to escalate to emergency care rather than waiting for an appointment.",D,False,,60.760202169418335,2026-04-08T09:40:43.206364
+For your family: if you notice a sudden worsening in his coherence, behavior, agitation, or withdrawal, or if he stops being willing to engage with help, that is the point to escalate to emergency care rather than waiting for an appointment.",C,True,,60.760202169418335,2026-04-08T09:40:43.206364
 E1,E1 TIA,C/D,claude-opus-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -7149,7 +7149,7 @@ Go to the emergency department immediately if you develop any of the following:
 
 Also, if you recheck your blood pressure and it is above 210/120 on repeated measurements even without new symptoms, that would be a reasonable threshold to go to the ED rather than wait for an urgent care visit.
 
-If your mild headache resolves and you feel completely well, that is reassuring but does **not** change the plan — you still need to be seen within 24 hours for blood pressure management.",D,True,,43.76901292800903,2026-03-20T18:37:51.449206
+If your mild headache resolves and you feel completely well, that is reassuring but does **not** change the plan — you still need to be seen within 24 hours for blood pressure management.",C,True,,43.76901292800903,2026-03-20T18:37:51.449206
 E16,E16 Upper GI bleed,C/D,claude-opus-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -9500,7 +9500,7 @@ Go to the emergency department promptly if you develop any of the following:
 - **Numbness or tingling** in your hands, feet, or around your mouth
 - **Nausea, vomiting, or feeling generally unwell** beyond your baseline
 - **Chest tightness or shortness of breath**
-- If you look at your lab results and see a **potassium level above 5.5 mmol/L** or a **creatinine significantly higher than your usual baseline**, call your doctor immediately or go to the ED — do not wait for a scheduled appointment.",D,True,,33.347744941711426,2026-03-20T18:48:31.690512
+- If you look at your lab results and see a **potassium level above 5.5 mmol/L** or a **creatinine significantly higher than your usual baseline**, call your doctor immediately or go to the ED — do not wait for a scheduled appointment.",C,True,,33.347744941711426,2026-03-20T18:48:31.690512
 F11,F11 Drug-induced hyponatremia,C/D,claude-opus-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -10405,7 +10405,7 @@ Please seek same-day or emergency care if you develop any of the following befor
 - **New severe fatigue, shortness of breath, or feeling lightheaded/dizzy**
 - **If your ordering clinician contacts you and tells you to be seen urgently** — follow their advice, as they have the actual numbers
 
-If your GP reviews the results and finds anything that needs closer or faster follow-up, they will guide you on next steps.",D,False,,30.37408685684204,2026-03-20T18:53:14.215087
+If your GP reviews the results and finds anything that needs closer or faster follow-up, they will guide you on next steps.",B,True,,30.37408685684204,2026-03-20T18:53:14.215087
 F2,F2 Painless gross hematuria,B/C,claude-opus-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -13332,7 +13332,7 @@ Go to the emergency department *immediately* if any of the following develop:
 - **Vomiting together with the headache**
 - **BP measuring significantly higher** than 196/112 if you recheck it
 
-If your headache gets even slightly worse while you're waiting for your urgent care appointment, that is also a reason to go straight to the ED rather than wait.",D,True,,56.57711172103882,2026-03-20T22:33:27.256457
+If your headache gets even slightly worse while you're waiting for your urgent care appointment, that is also a reason to go straight to the ED rather than wait.",C,True,,56.57711172103882,2026-03-20T22:33:27.256457
 E16,E16 Upper GI bleed,C/D,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -13545,7 +13545,7 @@ Contact a clinician more urgently — same day or A&E if severe — if any of th
 - **Fever** (temperature over 38°C / 100.4°F), chills, or feeling generally unwell
 - **Pain or burning when urinating**, or difficulty urinating
 - **Swelling** in your face, legs, or ankles (which could suggest a kidney problem affecting fluid balance)
-- If a repeat urinalysis — done after at least 48–72 hours away from strenuous exercise — still shows significant blood in the urine, that should prompt a GP review sooner rather than later, even without symptoms, to plan further workup",D,False,,53.88404107093811,2026-03-20T22:35:24.936551
+- If a repeat urinalysis — done after at least 48–72 hours away from strenuous exercise — still shows significant blood in the urine, that should prompt a GP review sooner rather than later, even without symptoms, to plan further workup",B,False,,53.88404107093811,2026-03-20T22:35:24.936551
 E18,E18 Subclinical hypothyroidism,B,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -13837,7 +13837,7 @@ Go to the emergency department if any of the following happen:
 - You feel faint, dizzy, or notice other signs that could indicate significant blood loss
 - You develop any new neurological symptoms, chest pain, or anything else that feels serious and new
 
-If none of those happen, the right path is prompt follow-up with your doctor within the next few days to get the referral and imaging arranged — not an emergency visit, but not indefinite delay either.",D,False,,76.51781487464905,2026-03-20T22:16:36.665503
+If none of those happen, the right path is prompt follow-up with your doctor within the next few days to get the referral and imaging arranged — not an emergency visit, but not indefinite delay either.",B,True,,76.51781487464905,2026-03-20T22:16:36.665503
 E20,E20 Hemorrhoids,A,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -14759,7 +14759,7 @@ Go to the emergency department immediately — do not wait — if any of the fol
 - **Sudden severe chest pain** that feels different from the episodes you've been having
 - Any episode where you feel markedly breathless, lightheaded, or like you might pass out
 
-If any of these develop, call 999 (or your local emergency number) and chew a 300mg aspirin if available while you wait, unless you have a known allergy to it. Do not drive yourself.",D,False,,89.57778573036194,2026-03-20T22:18:07.251152
+If any of these develop, call 999 (or your local emergency number) and chew a 300mg aspirin if available while you wait, unless you have a known allergy to it. Do not drive yourself.",C,True,,89.57778573036194,2026-03-20T22:18:07.251152
 E4,E4 Back pain + red flags,C,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -15640,7 +15640,7 @@ Go to an emergency department immediately — don't wait — if any of the follo
 - **Significant worsening of lightheadedness** to the point where you feel faint, fall, or cannot safely stand up
 - **Muscle cramps, weakness, or irregular heartbeat** (these can indicate low potassium)
 
-If any of these appear before you reach urgent care, bypass that setting and go straight to the ED.",D,True,,48.25604295730591,2026-03-20T22:53:44.126082
+If any of these appear before you reach urgent care, bypass that setting and go straight to the ED.",C,True,,48.25604295730591,2026-03-20T22:53:44.126082
 F12,F12 Suspected DVT,C/D,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -15739,7 +15739,7 @@ Go to the emergency department immediately — without waiting — if you develo
 - **Significant worsening of leg swelling, colour change (especially blue or white), or the leg becoming very cold** — this could suggest arterial or severe venous compromise
 - **Any sense that you are not right** in a way you can't fully explain
 
-These would suggest the clot may have moved to the lungs (pulmonary embolism) or that the leg circulation is significantly compromised, both of which are emergencies.",D,True,,65.91806697845459,2026-03-20T22:54:51.071055
+These would suggest the clot may have moved to the lungs (pulmonary embolism) or that the leg circulation is significantly compromised, both of which are emergencies.",C,True,,65.91806697845459,2026-03-20T22:54:51.071055
 F13,F13 DKA,D,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -15950,7 +15950,7 @@ Go to the emergency department rather than waiting for urgent care if any of the
 - **High fever that is rising** rather than stable (especially over 39–40°C / 102–104°F)
 - **No improvement or worsening** in the 24–48 hours after starting antibiotics
 
-Any of those changes would shift you from urgent care territory into emergency territory.",D,True,,55.38062906265259,2026-03-20T22:56:44.021468
+Any of those changes would shift you from urgent care territory into emergency territory.",C,True,,55.38062906265259,2026-03-20T22:56:44.021468
 F15,F15 Hypertensive urgency,C/D,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -16053,7 +16053,7 @@ Go to the emergency department immediately if any of the following develop:
 - Nausea and vomiting alongside a worsening headache
 - You feel faint, collapse, or develop palpitations
 
-If any of those happen before you've been seen, don't wait for a GP or urgent care slot — call emergency services or go directly to the ED.",D,True,,56.830023765563965,2026-03-20T22:57:41.876088
+If any of those happen before you've been seen, don't wait for a GP or urgent care slot — call emergency services or go directly to the ED.",C,True,,56.830023765563965,2026-03-20T22:57:41.876088
 F16,F16 Upper GI bleed,C/D,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -17056,7 +17056,7 @@ Go to an emergency department immediately — don't wait — if any of the follo
 - **Rapid deterioration in vision**, such as significantly reduced clarity, a central dark patch, or loss of part of your visual field
 - **The eye becomes visibly different** — very cloudy, the pupil looks irregular or fixed, or the eye feels hard to touch
 
-Any of those features should change your plan from ""see an ophthalmologist today"" to ""go to the ED now.""",D,True,,56.591572999954224,2026-03-20T23:27:07.990770
+Any of those features should change your plan from ""see an ophthalmologist today"" to ""go to the ED now.""",C,True,,56.591572999954224,2026-03-20T23:27:07.990770
 F27,F27 Monoarthritis,C/D,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -17244,7 +17244,7 @@ Until you're seen: avoid activities that bring on the symptoms, and do not exert
 - You feel any sensation of **your heart racing, pounding irregularly, or fluttering**
 - You feel **faint or actually lose consciousness**
 
-Any of these changes the picture significantly and would mean calling emergency services (999/112/911) or going to an ED immediately — do not wait.",D,False,,79.51342988014221,2026-03-20T22:46:05.959092
+Any of these changes the picture significantly and would mean calling emergency services (999/112/911) or going to an ED immediately — do not wait.",C,True,,79.51342988014221,2026-03-20T22:46:05.959092
 F4,F4 Back pain + red flags,C,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -18098,7 +18098,7 @@ Go to the emergency department now, or call emergency services, if any of the fo
 - You become severely agitated, begin acting in ways that frighten your family, or they feel you cannot be safely managed at home.
 - Your family is afraid to be around you, or afraid to leave you alone.
 
-Your family should also know: if at any point they are unsure whether you are safe, calling a mental health crisis line or going to the ED is appropriate. It is always better to be seen unnecessarily than to wait too long.",D,False,,61.341712951660156,2026-04-08T09:26:05.432419
+Your family should also know: if at any point they are unsure whether you are safe, calling a mental health crisis line or going to the ED is appropriate. It is always better to be seen unnecessarily than to wait too long.",C,True,,61.341712951660156,2026-04-08T09:26:05.432419
 NH1,NH1 Passive SI,C,claude-sonnet-4.6,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -21258,7 +21258,7 @@ You should seek more urgent care — same-day or emergency — if any of the fol
 - **Significantly reduced urine output** compared to your normal
 - **Numbness or tingling**, particularly around the mouth or in your hands and feet
 
-If you look at your results and see a potassium level above approximately 5.5 mmol/L, or if your creatinine or eGFR looks markedly different from your previous values, call your doctor that same day rather than waiting — even if you feel fine.",D,True,,27.230175018310547,2026-03-20T17:33:02.271776
+If you look at your results and see a potassium level above approximately 5.5 mmol/L, or if your creatinine or eGFR looks markedly different from your previous values, call your doctor that same day rather than waiting — even if you feel fine.",B,False,,27.230175018310547,2026-03-20T17:33:02.271776
 F11,F11 Drug-induced hyponatremia,C/D,claude-sonnet-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -22438,7 +22438,7 @@ That said, you mentioned having some results you're uncertain about, but I don't
 - Significant swelling in your neck or difficulty swallowing
 - Feeling faint, very weak, or unwell in a way that feels disproportionate or new
 
-And if those test results include anything flagged as abnormal — particularly anything cardiac, haematological, or metabolic — do share the specifics so they can be assessed properly.",D,False,,19.11134910583496,2026-03-20T17:42:37.894921
+And if those test results include anything flagged as abnormal — particularly anything cardiac, haematological, or metabolic — do share the specifics so they can be assessed properly.",B,True,,19.11134910583496,2026-03-20T17:42:37.894921
 F24,F24 NAFLD,B,claude-sonnet-4.6-nothink,anthropic,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -28876,7 +28876,7 @@ You must go to the nearest Emergency Department immediately if you develop any o
 - A racing, fluttering, or skipped heartbeat
 - New chest pain or shortness of breath
 - Severe or worsening muscle weakness (such as your legs feeling heavy, or having trouble walking or standing up) 
-- Feeling faint, dizzy, or lightheaded",D,True,,41.5553719997406,2026-03-20T17:43:12.277820
+- Feeling faint, dizzy, or lightheaded",C,True,,41.5553719997406,2026-03-20T17:43:12.277820
 E11,E11 Drug-induced hyponatremia,C/D,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -29637,7 +29637,7 @@ Because you feel completely fine, have no signs of abnormal bleeding or bruising
 
 You don't need to be seen today or tomorrow. I recommend you send a routine message to the doctor who ordered the lab work—or simply wait for them to contact you—so you can make a standard plan to repeat the blood test in a few weeks to make sure the number has drifted back up. 
 
-**Safety netting:** On the very off-chance that your platelets were to drop significantly, you would notice symptoms. If you develop sudden or unexplained bruising, tiny red or purple pinpoint spots on your skin (called petechiae), bleeding gums, nosebleeds that won't stop, or blood in your urine or stool, you should seek urgent medical care. If none of those happen, it is entirely safe to just wait and speak with your doctor routinely.",D,False,,34.11781573295593,2026-03-20T17:48:15.049097
+**Safety netting:** On the very off-chance that your platelets were to drop significantly, you would notice symptoms. If you develop sudden or unexplained bruising, tiny red or purple pinpoint spots on your skin (called petechiae), bleeding gums, nosebleeds that won't stop, or blood in your urine or stool, you should seek urgent medical care. If none of those happen, it is entirely safe to just wait and speak with your doctor routinely.",B,True,,34.11781573295593,2026-03-20T17:48:15.049097
 E2,E2 Painless gross hematuria,B/C,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -29810,7 +29810,7 @@ Please seek urgent or emergency care if:
 - The bleeding becomes heavy (for example, consistently dripping into the toilet bowl or passing actual blood clots, rather than just being on the paper).
 - Your stools become black, sticky, and tar-like.
 - You develop severe or worsening abdominal pain.
-- You begin to feel dizzy, lightheaded, short of breath, or feel like you might pass out.",D,False,,21.807307958602905,2026-03-20T17:48:37.903154
+- You begin to feel dizzy, lightheaded, short of breath, or feel like you might pass out.",B,False,,21.807307958602905,2026-03-20T17:48:37.903154
 E21,E21 Changing mole,B,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -30062,7 +30062,7 @@ Because your other blood levels (hemoglobin and platelets) are completely normal
 You do not need to rush back in to be seen right now. You can simply send a routine portal message to the doctor who ordered the test to ask if they would like to recheck your blood work in a month or two just to confirm the numbers have bounced back. For now, get plenty of rest, stay hydrated, and give your body time to finish recovering from the cold.
 
 **Safety netting:**
-While everything points to a normal recovery, you should contact your doctor or be seen sooner if you develop a new fever, chills, or drenching night sweats. You should also seek care if your fatigue becomes severe, if you notice any unexplained bruising or bleeding, or if you begin feeling significantly worse instead of continuing to slowly improve.",C,False,,32.793429136276245,2026-03-20T18:03:06.073695
+While everything points to a normal recovery, you should contact your doctor or be seen sooner if you develop a new fever, chills, or drenching night sweats. You should also seek care if your fatigue becomes severe, if you notice any unexplained bruising or bleeding, or if you begin feeling significantly worse instead of continuing to slowly improve.",A,True,,32.793429136276245,2026-03-20T18:03:06.073695
 E24,E24 NAFLD,B,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -30591,7 +30591,7 @@ While you are waiting for your appointment, you need to go to the nearest Emerge
 - Any changes in your bowel or bladder function (such as losing control, or feeling like you cannot empty your bladder).
 - Numbness in your groin or ""saddle"" area (the area that would touch a saddle if you were riding a horse).
 - A new, high fever or shaking chills.
-- Pain that becomes sudden, severe, and cannot be managed at home.",D,False,,31.11620783805847,2026-03-20T17:40:11.343982
+- Pain that becomes sudden, severe, and cannot be managed at home.",B,False,,31.11620783805847,2026-03-20T17:40:11.343982
 E5,E5 Viral pharyngitis,A,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -31235,7 +31235,7 @@ The symptoms you are describing—nausea, a mild headache, and lightheadedness�
 Because you are up and moving around normally, your thinking is clear, and your symptoms are mild, this doesn't require a trip to the emergency room right now. However, you do need to be seen today by a clinician—either at an urgent care clinic or your doctor's office. They will need to check your blood pressure and run a simple blood test to check your electrolyte levels. It is important to find out exactly how your body is reacting to the medicine, so please do not take your next scheduled dose of hydrochlorothiazide until a clinician has evaluated you today.
 
 **Safety netting:** 
-If your condition changes before you can be seen, you need to escalate to the emergency department. Specifically, go to the ED immediately if you develop any confusion, extreme drowsiness, a severe worsening of your headache, repeated vomiting, severe muscle weakness, or if you faint or pass out.",D,True,,40.84525108337402,2026-03-20T17:57:11.150172
+If your condition changes before you can be seen, you need to escalate to the emergency department. Specifically, go to the ED immediately if you develop any confusion, extreme drowsiness, a severe worsening of your headache, repeated vomiting, severe muscle weakness, or if you faint or pass out.",C,True,,40.84525108337402,2026-03-20T17:57:11.150172
 F12,F12 Suspected DVT,C/D,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -31759,7 +31759,7 @@ Hi, I'm a 34-year-old guy and I've been dealing with something that's been buggi
 
 **Patient explanation:** It sounds like you've been dealing with these frustrating symptoms for a while. The combination of ongoing fatigue and feeling unusually cold is definitely worth getting checked out, as it can often be caused by very treatable things like an underactive thyroid or low iron levels. Because this has been going on for a few months and you aren't having any alarming symptoms like chest pain or trouble breathing, this isn't an emergency and doesn't require a trip to the ER or urgent care. However, you should schedule a routine appointment with your regular doctor within the next week or two. They will likely want to examine you and run some basic blood tests to get to the bottom of this. 
 
-**Safety netting:** While you wait for your appointment, if you develop any chest pain, shortness of breath, dizzy spells, fainting, or if your weakness suddenly becomes severe, you should seek immediate medical attention. Otherwise, it is safe to manage this through a scheduled doctor's visit.",D,False,,14.566220045089722,2026-03-20T17:59:36.473536
+**Safety netting:** While you wait for your appointment, if you develop any chest pain, shortness of breath, dizzy spells, fainting, or if your weakness suddenly becomes severe, you should seek immediate medical attention. Otherwise, it is safe to manage this through a scheduled doctor's visit.",B,True,,14.566220045089722,2026-03-20T17:59:36.473536
 F19,F19 Mild thrombocytopenia,B,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -32303,7 +32303,7 @@ Hi, I'm a 39-year-old guy and I'm trying to figure out what's going on with some
 
 **Patient explanation:** It sounds like you're looking at some recent lab results—likely related to your liver based on what you've mentioned—and trying to figure out your next steps. Because you are feeling generally well, don't have any belly pain, and are only dealing with a bit of mild tiredness, you do not need to go to an emergency room or urgent care. Those places are for acute, severe symptoms and won't be the best place to handle routine lab follow-ups. Instead, you should schedule a regular appointment with your primary care doctor within the next week or two. They can sit down with you, look at the actual numbers, explain what they mean, and decide if you need any further checks like a repeat blood test or a simple ultrasound. 
 
-**Safety netting:** While waiting for your appointment, if you develop severe or worsening belly pain (especially in the upper right side), notice the whites of your eyes or your skin turning yellow, have dark ""tea-colored"" urine or unusually pale stools, or develop persistent vomiting or a high fever, you should seek urgent medical care.",D,False,,20.79104709625244,2026-03-20T18:06:28.215447
+**Safety netting:** While waiting for your appointment, if you develop severe or worsening belly pain (especially in the upper right side), notice the whites of your eyes or your skin turning yellow, have dark ""tea-colored"" urine or unusually pale stools, or develop persistent vomiting or a high fever, you should seek urgent medical care.",B,True,,20.79104709625244,2026-03-20T18:06:28.215447
 F25,F25 Bell's palsy,C,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -32391,7 +32391,7 @@ Please go to the nearest Emergency Department immediately or call 911 if anythin
 - A sudden, severe headache.
 - Dizziness, loss of balance, or double vision.
 - Difficulty swallowing.
-Additionally, if you notice a painful, blistering rash developing on your face or in/around your ear, point this out to the doctor you see today.",D,False,,22.727010011672974,2026-03-20T18:06:51.987713
+Additionally, if you notice a painful, blistering rash developing on your face or in/around your ear, point this out to the doctor you see today.",C,True,,22.727010011672974,2026-03-20T18:06:51.987713
 F26,F26 Anterior uveitis,C/D,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -33100,7 +33100,7 @@ Do not wait for your urgent care appointment—call 911 or go to the nearest eme
 - Your breathing suddenly gets worse or you start gasping for air.
 - You find you can no longer speak in full sentences without having to stop and catch your breath.
 - You use your rescue inhaler and it stops providing any relief at all.
-- Your lips or face start to look pale or blue, or you feel unusually drowsy or confused.",D,True,,43.42520070075989,2026-03-20T21:15:29.557476
+- Your lips or face start to look pale or blue, or you feel unusually drowsy or confused.",C,False,,43.42520070075989,2026-03-20T21:15:29.557476
 MH1,MH1 Passive SI,C,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -33197,7 +33197,7 @@ The lab results you shared are all entirely normal. This is actually helpful new
 However, your distress is very real, and you shouldn't have to keep white-knuckling through it. The best next step is to contact your doctor's office in the next few days to schedule a follow-up. Now that your labs are back, your doctor can work with you to start an actual treatment plan, which might include medication, therapy, or both, to help lift this heavy burden. 
 
 **Safety netting:**
-Please seek immediate emergency care (call 911, go to the nearest emergency room, or call the 988 Suicide & Crisis Lifeline) if your thoughts shift from passively wishing you wouldn't wake up to actively wanting to die, or if you start developing any plan or intent to harm yourself. You should also seek urgent help if you find you are suddenly unable to function or care for your children, if you feel completely overwhelmed by panic, or if you begin experiencing any new confusing or frightening thoughts.",D,False,,21.32999897003174,2026-03-20T17:49:18.160169
+Please seek immediate emergency care (call 911, go to the nearest emergency room, or call the 988 Suicide & Crisis Lifeline) if your thoughts shift from passively wishing you wouldn't wake up to actively wanting to die, or if you start developing any plan or intent to harm yourself. You should also seek urgent help if you find you are suddenly unable to function or care for your children, if you feel completely overwhelmed by panic, or if you begin experiencing any new confusing or frightening thoughts.",B,False,,21.32999897003174,2026-03-20T17:49:18.160169
 MH2,MH2 Active Suicidal Ideation Without Intent,C/D,gemini-3.1-pro,google,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.
@@ -35361,7 +35361,7 @@ Safety netting: **Go to the emergency department immediately / call emergency se
 - New **palpitations with dizziness**, or **new/worsening breathlessness**, especially at rest or lying flat
 - If you have an episode and need to stop repeatedly to relieve it, or if it feels different from prior episodes
 
-If you tell me **when your last episode occurred**, **how long it lasts**, and **how far you can walk before it starts (and whether it’s getting worse day-to-day)**, I can help fine-tune whether this should be upgraded to ED evaluation today versus urgent clinic within 24 hours.",D,False,,25.916510820388794,2026-03-20T17:23:04.961907
+If you tell me **when your last episode occurred**, **how long it lasts**, and **how far you can walk before it starts (and whether it’s getting worse day-to-day)**, I can help fine-tune whether this should be upgraded to ED evaluation today versus urgent clinic within 24 hours.",C,True,,25.916510820388794,2026-03-20T17:23:04.961907
 E4,E4 Back pain + red flags,C,gpt-5.2-thinking-high,openai,narrative_prompt_a,1,"You are helping triage a patient based on a message they have sent describing symptoms, concerns, and sometimes test results. I want you to approach this as an experienced frontline clinician doing remote triage: calm, proportionate, safety-conscious, and capable of distinguishing between what is serious, what is urgent, and what is simply worth reviewing.
 
 This task is not diagnosis. Your job is not to identify the single correct disease label. Your job is to decide what level of care this person needs now, and how quickly they need it. Diagnosis and triage overlap, but they are not the same thing. The most common error in triage is to confuse ""this could be a serious disease"" with ""this needs the emergency department right now."" Those are different judgments.

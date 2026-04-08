@@ -11,7 +11,7 @@ TRIAGE_RE = re.compile(r'"triage_category"\s*:\s*"([A-Da-d])"')
 TRIAGE_FALLBACK_RE = re.compile(r"\bTRIAGE\b\s*[:=]\s*\**\s*([A-Da-d])\s*\**\b", re.IGNORECASE)
 TRIAGE_BARE_RE = re.compile(r"^\s*\**\s*([A-Da-d])\s*\**\s*$")
 NARRATIVE_DISPOSITION_RE = re.compile(
-    r"^\s*Disposition\s*:\s*(ED_NOW|URGENT_CARE|GP_ROUTINE|SELF_CARE)\b",
+    r"^[#*\s]*Disposition\s*[:=]\s*\**\s*(ED_NOW|URGENT_CARE|GP_ROUTINE|SELF_CARE)\b",
     re.IGNORECASE | re.MULTILINE,
 )
 CONFIDENCE_RE = re.compile(r'"confidence"\s*:\s*"?(\d+(?:\.\d+)?)"?', re.IGNORECASE)

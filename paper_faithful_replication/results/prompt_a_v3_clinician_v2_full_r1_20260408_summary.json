@@ -7,38 +7,38 @@
     {
       "model": "claude-opus-4.6",
       "n": 60,
-      "correct": 29,
-      "accuracy": 0.48333333333333334,
+      "correct": 49,
+      "accuracy": 0.8166666666666667,
       "with_data_n": 30,
-      "with_data_correct": 15,
-      "with_data_accuracy": 0.5,
+      "with_data_correct": 26,
+      "with_data_accuracy": 0.8666666666666667,
       "symptoms_only_n": 30,
-      "symptoms_only_correct": 14,
-      "symptoms_only_accuracy": 0.4666666666666667
+      "symptoms_only_correct": 23,
+      "symptoms_only_accuracy": 0.7666666666666667
     },
     {
       "model": "claude-opus-4.6-nothink",
       "n": 60,
-      "correct": 51,
-      "accuracy": 0.85,
+      "correct": 52,
+      "accuracy": 0.8666666666666667,
       "with_data_n": 30,
       "with_data_correct": 27,
       "with_data_accuracy": 0.9,
       "symptoms_only_n": 30,
-      "symptoms_only_correct": 24,
-      "symptoms_only_accuracy": 0.8
+      "symptoms_only_correct": 25,
+      "symptoms_only_accuracy": 0.8333333333333334
     },
     {
       "model": "claude-sonnet-4.6",
       "n": 60,
-      "correct": 46,
-      "accuracy": 0.7666666666666667,
+      "correct": 50,
+      "accuracy": 0.8333333333333334,
       "with_data_n": 30,
-      "with_data_correct": 23,
-      "with_data_accuracy": 0.7666666666666667,
+      "with_data_correct": 26,
+      "with_data_accuracy": 0.8666666666666667,
       "symptoms_only_n": 30,
-      "symptoms_only_correct": 23,
-      "symptoms_only_accuracy": 0.7666666666666667
+      "symptoms_only_correct": 24,
+      "symptoms_only_accuracy": 0.8
     },
     {
       "model": "claude-sonnet-4.6-nothink",
@@ -67,23 +67,23 @@
     {
       "model": "gemini-3.1-pro",
       "n": 60,
-      "correct": 36,
-      "accuracy": 0.6,
+      "correct": 40,
+      "accuracy": 0.6666666666666666,
       "with_data_n": 30,
-      "with_data_correct": 17,
-      "with_data_accuracy": 0.5666666666666667,
+      "with_data_correct": 19,
+      "with_data_accuracy": 0.6333333333333333,
       "symptoms_only_n": 30,
-      "symptoms_only_correct": 19,
-      "symptoms_only_accuracy": 0.6333333333333333
+      "symptoms_only_correct": 21,
+      "symptoms_only_accuracy": 0.7
     },
     {
       "model": "gpt-5.2-thinking-high",
       "n": 60,
-      "correct": 48,
-      "accuracy": 0.8,
+      "correct": 49,
+      "accuracy": 0.8166666666666667,
       "with_data_n": 30,
-      "with_data_correct": 25,
-      "with_data_accuracy": 0.8333333333333334,
+      "with_data_correct": 26,
+      "with_data_accuracy": 0.8666666666666667,
       "symptoms_only_n": 30,
       "symptoms_only_correct": 23,
       "symptoms_only_accuracy": 0.7666666666666667
